@@ -8,6 +8,8 @@ import {
 import { res } from "../components/data"
 import { Stepper } from "../components/stepper";
 import { useStore } from '../components/state_map'
+import Style from '../styles/map.module.css'
+
 
 export default function Home() {
 
@@ -63,7 +65,53 @@ function Map() {
   const setMarkerClick = useStore(state => state.setMarkerClick)
 
   return (
-    <div ref={node}>
+    <div className={Style.mainContainer}>  
+    <div className={Style.card}>
+      <div className={Style.cardTitle} >
+        <h2 style={{color:'#666'}} >Kalkan Villas</h2>
+      </div>
+      <div style={{height:10, backgroundColor:'#fff'}} ></div>
+      
+    <Stepper id={1} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={2} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={3} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={4} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={5} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={6} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={7} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={8} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={9} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={10} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={11} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={12} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={13} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={14} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={15} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={16} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={17} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={18} />
+    <div style={{height:40, backgroundColor:'#fff'}} ></div>
+    <Stepper id={19} />
+
+    </div>
+    <div ref={node} className={Style.mapContainer} >
 
       <GoogleMap zoom={15} center={center} mapContainerClassName="map-container"
         options={options}
@@ -107,8 +155,8 @@ function Map() {
                     "M-9,-5 l18,0 l0,9 l-18,0 l0,-9",
                   fillColor: "white",
                   fillOpacity: 1,
-                  scale: 2.7,
-                  strokeColor: "orange",
+                  scale: 3,
+                  strokeColor: "red",
                   strokeWeight: 1.5,
                 }}
               />
@@ -126,6 +174,7 @@ function Map() {
         }
 
       </GoogleMap>
+    </div>
     </div>
   );
 }
@@ -162,7 +211,7 @@ const generateHouses = () => {
         lat: items0.listing.lat,
         lng: items0.listing.lng
       },
-      price: `${items0.pricingQuote.priceString}${spe}`,
+      price: `${items0.pricingQuote.priceString}`,
       id: 0
     },
     {
@@ -170,7 +219,7 @@ const generateHouses = () => {
         lat: items1.listing.lat,
         lng: items1.listing.lng
       },
-      price: `${items1.pricingQuote.priceString}${spe}`,
+      price: `${items1.pricingQuote.priceString}`,
       id: 1
     },
     {
@@ -178,7 +227,7 @@ const generateHouses = () => {
         lat: items2.listing.lat,
         lng: items2.listing.lng
       },
-      price: `${items2.pricingQuote.priceString}${spe}`,
+      price: `${items2.pricingQuote.priceString}`,
       id: 2
     },
     {
@@ -186,7 +235,7 @@ const generateHouses = () => {
         lat: items3.listing.lat,
         lng: items3.listing.lng
       },
-      price: `${items3.pricingQuote.priceString}${spe}`,
+      price: `${items3.pricingQuote.priceString}`,
       id: 3
     },
     {
@@ -194,7 +243,7 @@ const generateHouses = () => {
         lat: items4.listing.lat,
         lng: items4.listing.lng
       },
-      price: `${items4.pricingQuote.priceString}${spe}`,
+      price: `${items4.pricingQuote.priceString}`,
       id: 4
     },
     {
@@ -202,7 +251,7 @@ const generateHouses = () => {
         lat: items5.listing.lat,
         lng: items5.listing.lng
       },
-      price: `${items5.pricingQuote.priceString}${spe}`,
+      price: `${items5.pricingQuote.priceString}`,
       id: 5
     },
     {
@@ -210,7 +259,7 @@ const generateHouses = () => {
         lat: items6.listing.lat,
         lng: items6.listing.lng
       },
-      price: `${items6.pricingQuote.priceString}${spe}`,
+      price: `${items6.pricingQuote.priceString}`,
       id: 6
     },
     {
@@ -218,7 +267,7 @@ const generateHouses = () => {
         lat: items7.listing.lat,
         lng: items7.listing.lng
       },
-      price: `${items7.pricingQuote.priceString}${spe}`,
+      price: `${items7.pricingQuote.priceString}`,
       id: 7
     },
     {
@@ -226,7 +275,7 @@ const generateHouses = () => {
         lat: items8.listing.lat,
         lng: items8.listing.lng
       },
-      price: `${items8.pricingQuote.priceString}${spe}`,
+      price: `${items8.pricingQuote.priceString}`,
       id: 8
     },
     {
@@ -234,7 +283,7 @@ const generateHouses = () => {
         lat: items9.listing.lat,
         lng: items9.listing.lng
       },
-      price: `${items9.pricingQuote.priceString}${spe}`,
+      price: `${items9.pricingQuote.priceString}`,
       id: 9
     },
     {
@@ -242,7 +291,7 @@ const generateHouses = () => {
         lat: items10.listing.lat,
         lng: items10.listing.lng
       },
-      price: `${items10.pricingQuote.priceString}${spe}`,
+      price: `${items10.pricingQuote.priceString}`,
       id: 10
     },
     {
@@ -250,7 +299,7 @@ const generateHouses = () => {
         lat: items11.listing.lat,
         lng: items11.listing.lng
       },
-      price: `${items11.pricingQuote.priceString}${spe}`,
+      price: `${items11.pricingQuote.priceString}`,
       id: 11
     },
     {
@@ -258,7 +307,7 @@ const generateHouses = () => {
         lat: items12.listing.lat,
         lng: items12.listing.lng
       },
-      price: `${items12.pricingQuote.priceString}${spe}`,
+      price: `${items12.pricingQuote.priceString}`,
       id: 12
     },
     {
@@ -266,7 +315,7 @@ const generateHouses = () => {
         lat: items13.listing.lat,
         lng: items13.listing.lng
       },
-      price: `${items13.pricingQuote.priceString}${spe}`,
+      price: `${items13.pricingQuote.priceString}`,
       id: 13
     },
     {
@@ -274,7 +323,7 @@ const generateHouses = () => {
         lat: items14.listing.lat,
         lng: items14.listing.lng
       },
-      price: `${items14.pricingQuote.priceString}${spe}`,
+      price: `${items14.pricingQuote.priceString}`,
       id: 14
     },
     {
@@ -282,7 +331,7 @@ const generateHouses = () => {
         lat: items15.listing.lat,
         lng: items15.listing.lng
       },
-      price: `${items15.pricingQuote.priceString}${spe}`,
+      price: `${items15.pricingQuote.priceString}`,
       id: 15
     },
     {
@@ -290,7 +339,7 @@ const generateHouses = () => {
         lat: items16.listing.lat,
         lng: items16.listing.lng
       },
-      price: `${items16.pricingQuote.priceString}${spe}`,
+      price: `${items16.pricingQuote.priceString}`,
       id: 16
     },
     {
@@ -298,7 +347,7 @@ const generateHouses = () => {
         lat: items17.listing.lat,
         lng: items17.listing.lng
       },
-      price: `${items17.pricingQuote.priceString}${spe}`,
+      price: `${items17.pricingQuote.priceString}`,
       id: 17
     },
     {
@@ -306,7 +355,7 @@ const generateHouses = () => {
         lat: items18.listing.lat,
         lng: items18.listing.lng
       },
-      price: `${items18.pricingQuote.priceString}${spe}`,
+      price: `${items18.pricingQuote.priceString}`,
       id: 18
     },
     {
@@ -314,7 +363,7 @@ const generateHouses = () => {
         lat: items19.listing.lat,
         lng: items19.listing.lng
       },
-      price: `${items19.pricingQuote.priceString}${spe}`,
+      price: `${items19.pricingQuote.priceString}`,
       id: 19
     },
 
