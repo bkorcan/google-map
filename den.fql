@@ -1,0 +1,27 @@
+
+Select('data',Get(Ref(Collection('text'), '330012242797940299')))
+
+Map(Select("contextualPictures",Select('listing',Select('data',Get(Ref(Collection('text'), '330012242797940299'))))), Lambda('x', Var('x')  ))
+Map(Select("contextualPictures",Select('listing',Select('data',Get(Ref(Collection('text'), '330012242797940299'))))), Lambda('x',Select('id', Var('x') ) ))
+Map(Select("contextualPictures",Select('listing',Select('data',Get(Ref(Collection('text'), '330012242797940299'))))), Lambda('x',Select('picture', Var('x') ) ))
+
+
+Select('listing',Select('data',Get(Ref(Collection('text'), '330012242797940299'))))
+Select('id',Select('listing',Select('data',Get(Ref(Collection('text'), '330012242797940299')))))
+Select('id',Select('listing',Select('data',Get(Ref(Collection('datca'), '330075890570495564')))))
+
+
+
+Map(Map(Select("contextualPictures",Select('listing',Select('data',Get(Ref(Collection('text'), '330012242797940299'))))), Lambda('x', Var('x')  )),Lambda('x',Var('x')))
+
+Select(
+  "id",
+  Select(
+    "listing",
+    Select("data", Get(Ref(Collection("kas"), "330090186655401548")))
+  )
+)
+#Fauna Login
+fauna cloud-login
+fauna import --path ./copy.json --collection=kas --secret=fnAElNHogjACSWTNlT0c4JNATgyCRjb5soWwEfW3 --append
+fauna import --path ./copy.json --collection=kalkan --secret=fnAElNHogjACSWTNlT0c4JNATgyCRjb5soWwEfW3 --append

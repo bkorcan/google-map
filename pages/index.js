@@ -4,7 +4,6 @@ import {
 import {
   GoogleMap, useLoadScript, Marker, MarkerClusterer, OverlayView
 } from "@react-google-maps/api";
-// import MapCard from "../components/mapcard";
 import { res } from "../components/data"
 import { Stepper } from "../components/stepper";
 import { useStore } from '../components/state_map'
