@@ -25,5 +25,5 @@ Select('ref',Get(Match('id_by_listing_kas','50123272')))
 Update(Select('ref',Get(Match('id_by_listing_kas','50123272'))), {data:{priceString:'200'}})
 #Fauna Login
 fauna cloud-login
-fauna import --path ./copy1.json --collection=gocek --secret=fnAElNHogjACSWTNlT0c4JNATgyCRjb5soWwEfW3 --append
-fauna import --path ./copy.json --collection=kalkan --secret=fnAElNHogjACSWTNlT0c4JNATgyCRjb5soWwEfW3 --append
+fauna import --path ./copy.json --collection=kas --secret= --append
+fauna import --path ./copy.json --collection=gocek --secret= --append
