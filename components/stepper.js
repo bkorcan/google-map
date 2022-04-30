@@ -41,7 +41,7 @@ function Stepper({id}) {
    const viewBoxClick = useStore(state => state.viewBoxClick)
    const setViewBoxClick = useStore(state => state.setViewBoxClick)
 
-  const items = res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[id];
+  const items =  res[0].data.presentation.explore.sections.sections[2].section.child.section.items[id];
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = ContentNew().length;

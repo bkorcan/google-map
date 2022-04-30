@@ -182,26 +182,26 @@ const generateHouses = () => {
   // const spe= '\u20ba'
   // dollar sign unicode
   
-  const items0 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[0];
-  const items1 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[1];
-  const items2 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[2];
-  const items3 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[3];
-  const items4 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[4];
-  const items5 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[5];
-  const items6 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[6];
-  const items7 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[7];
-  const items8 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[8];
-  const items9 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[9];
-  const items10 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[10];
-  const items11 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[11];
-  const items12 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[12];
-  const items13 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[13];
-  const items14 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[14];
-  const items15 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[15];
-  const items16 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[16];
-  const items17=res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[17];
-  const items18 =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[18];
-  const items19=res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[19];
+  const items0 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[0];
+  const items1 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[1];
+  const items2 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[2];
+  const items3 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[3];
+  const items4 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[4];
+  const items5 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[5];
+  const items6 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[6];
+  const items7 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[7];
+  const items8 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[8];
+  const items9 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[9];
+  const items10 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[10];
+  const items11 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[11];
+  const items12 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[12];
+  const items13 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[13];
+  const items14 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[14];
+  const items15 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[15];
+  const items16 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[16];
+  const items17= res[0].data.presentation.explore.sections.sections[2].section.child.section.items[17];
+  const items18 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[18];
+  const items19= res[0].data.presentation.explore.sections.sections[2].section.child.section.items[19];
   const spe = '\u0024'
 
   const _houses = [

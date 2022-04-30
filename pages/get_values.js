@@ -15,9 +15,12 @@ export default function Home() {
     // console.log(`rating:${items.listing.avgRating}`)
     // console.log(`roomType:${items.listing.roomTypeCategory}`)
     
-    const items =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[2].section.child.section.items
+    // const items =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[4].section.child.section.items
     // const items =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items;
-    console.log(items)
+    const items = res[0].data.presentation.explore.sections.sections[2].section.child.section.items
+    // const items = res[0].data.presentation.explore.sections.sections[2].section.child.section.items
+    console.log(items[2].listing.id)
+    console.log(items[2].pricingQuote.priceString)
 
    return (
     <div>

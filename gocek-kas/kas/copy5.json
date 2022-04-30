@@ -1,0 +1,4315 @@
+[
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.91,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "774341128",
+            "picture": "https://a0.muscache.com/im/pictures/f21747a4-ad32-425d-ac5d-ea8ac5485f7f.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "4 beds",
+                "3 bedrooms"
+              ]
+            },
+            "id": "774341401",
+            "picture": "https://a0.muscache.com/im/pictures/24034500-bd15-4ead-ba07-85abdec670f8.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "2 baths"
+              ]
+            },
+            "id": "774340340",
+            "picture": "https://a0.muscache.com/im/pictures/3b27eabf-8795-4835-b9d2-49a6fa2d3722.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 king bed",
+                "3 single beds"
+              ]
+            },
+            "id": "774341752",
+            "picture": "https://a0.muscache.com/im/pictures/00b6e18b-c729-4694-9c6d-3b376d18e0b3.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "774340750",
+            "picture": "https://a0.muscache.com/im/pictures/0f86e64a-74c8-4a8e-9d1d-9bcc31a646bc.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 5 out of 5 for cleanliness"
+              ]
+            },
+            "id": "774341939",
+            "picture": "https://a0.muscache.com/im/pictures/8d1f22a8-870d-493d-ac82-5bace6e3f5ad.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "5 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "4 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 baths"
+          }
+        ],
+        "id": "34876271",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.19541,
+        "listingObjType": "REGULAR",
+        "lng": 29.65186,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Begonya Suite -4",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 5,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 23,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "tr",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 1,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "824 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 824,
+          "amountFormatted": "824 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 824,
+          "amountFormatted": "824 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "824 ₺ per night",
+            "price": "824 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1030082402",
+            "picture": "https://a0.muscache.com/im/pictures/849d69c0-5142-4140-82b8-627e5b19b447.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "2 beds",
+                "1 bedroom"
+              ]
+            },
+            "id": "961993481",
+            "picture": "https://a0.muscache.com/im/pictures/d295175c-d703-4046-ba30-d9ac54dd5def.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "961984672",
+            "picture": "https://a0.muscache.com/im/pictures/532944c0-2ca4-46a6-a6fd-3d33a73ceb23.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 king bed",
+                "1 sofa bed"
+              ]
+            },
+            "id": "961992411",
+            "picture": "https://a0.muscache.com/im/pictures/1266bdb6-5b27-42ec-a82b-c4b3e4f2b3de.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1030000383",
+            "picture": "https://a0.muscache.com/im/pictures/2adb5f80-e665-4eae-88d8-0d5256396cc8.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 5 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1030000399",
+            "picture": "https://a0.muscache.com/im/pictures/f7464cb1-23b5-4297-80b7-02b97369a95b.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "3 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "42030641",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire home in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20387,
+        "listingObjType": "REGULAR",
+        "lng": 29.61731,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Seafront Papaya Garden House",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire home"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 3,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 22,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.8,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "3,608 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 3608,
+          "amountFormatted": "3,608 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 3608,
+          "amountFormatted": "3,608 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "3,608 ₺ per night",
+            "price": "3,608 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1188935125",
+            "picture": "https://a0.muscache.com/im/pictures/3c4e0028-ffeb-448f-9848-92bab3935b19.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "3 beds",
+                "2 bedrooms"
+              ]
+            },
+            "id": "1188935093",
+            "picture": "https://a0.muscache.com/im/pictures/333725b4-1aa5-42f4-a732-c12f7d0e86f5.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "2 baths"
+              ]
+            },
+            "id": "1188935094",
+            "picture": "https://a0.muscache.com/im/pictures/a7125c5a-83d1-48e7-8633-705352d59c3b.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 king bed",
+                "2 single beds",
+                "more"
+              ]
+            },
+            "id": "1188935099",
+            "picture": "https://a0.muscache.com/im/pictures/8b358889-6786-414e-bfba-b739a529c50f.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1188935100",
+            "picture": "https://a0.muscache.com/im/pictures/dc8547f3-6413-4ff2-9865-33f44908b2a9.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.8 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1188935110",
+            "picture": "https://a0.muscache.com/im/pictures/d43e331e-897f-4f4e-95a6-5fa0648bdf63.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "6 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 baths"
+          }
+        ],
+        "id": "50123272",
+        "isNewListing": false,
+        "isSuperhost": false,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.19993,
+        "listingObjType": "REGULAR",
+        "lng": 29.64945,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "İncegül aparthotel",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 6,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 14,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": "COMPACT_TRANSLATE",
+        "titleTooltipMessage": "The title of this stay has been automatically translated. Turn translation off in your language settings %COMPACT_HOST_GLOBE%."
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.8,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "500 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 500,
+          "amountFormatted": "500 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 500,
+          "amountFormatted": "500 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "500 ₺ per night",
+            "price": "500 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.9
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.85,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1037413889",
+            "picture": "https://a0.muscache.com/im/pictures/9ed03683-10ca-4d5b-ba42-c2c4244a1971.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "3 beds",
+                "2 bedrooms"
+              ]
+            },
+            "id": "1037413932",
+            "picture": "https://a0.muscache.com/im/pictures/b2e5a86d-a9bb-435b-8589-7707dc5f7368.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1037413902",
+            "picture": "https://a0.muscache.com/im/pictures/2ccb2239-fe74-4617-8920-6e5a298c9cf4.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed",
+                "2 single beds"
+              ]
+            },
+            "id": "1037413901",
+            "picture": "https://a0.muscache.com/im/pictures/bbc63792-4101-4d33-b055-720e54d4e4f1.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1037413904",
+            "picture": "https://a0.muscache.com/im/pictures/f8640e2f-f4ca-4f6b-a800-f406cd1a04da.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.9 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1037413900",
+            "picture": "https://a0.muscache.com/im/pictures/f89889a4-d45c-401a-9bac-252126388c4d.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "4 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "44224075",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20058,
+        "listingObjType": "REGULAR",
+        "lng": 29.64129,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Close to the Sea 2+1 NEW APARTMENT DAIRE - Çalba apartment eyebrow",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 4,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 27,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": "COMPACT_TRANSLATE",
+        "titleTooltipMessage": "The title of this stay has been automatically translated. Turn translation off in your language settings %COMPACT_HOST_GLOBE%."
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.95,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "886 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 886,
+          "amountFormatted": "886 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 886,
+          "amountFormatted": "886 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "886 ₺ per night",
+            "price": "886 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.98
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": null,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1379915276",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-604125225852215481/original/6017999a-5d9c-477f-8a04-603280028183.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bed",
+                "1 bedroom"
+              ]
+            },
+            "id": "1381597050",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-604125225852215481/original/0bf263c8-9dc2-46ce-a0a8-3f9569d4b929.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1381597080",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-604125225852215481/original/d9cb79c9-6d38-40a1-a89f-cb61a8b70e27.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1381597086",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-604125225852215481/original/9f0d2898-98a3-49e3-8564-0c58a40d142a.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1381597071",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-604125225852215481/original/ea0f90e1-12f3-4786-ba43-4dee6a80099f.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1381597109",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-604125225852215481/original/0432944a-d118-46cf-92ed-4257eb47aec7.jpeg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "2 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bed"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "604125225852215481",
+        "isNewListing": true,
+        "isSuperhost": false,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire loft in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.265083,
+        "listingObjType": "REGULAR",
+        "lng": 29.425053,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "View House",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire loft"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 2,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 0,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": false,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.75,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "490 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 490,
+          "amountFormatted": "490 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 490,
+          "amountFormatted": "490 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "490 ₺ per night",
+            "price": "490 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.85
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.82,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1223926452",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-22728070/original/04f15f52-3bc2-4a5a-ae48-a85360f74e9e.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "2 beds",
+                "1 bedroom"
+              ]
+            },
+            "id": "1223926453",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-22728070/original/611f93ac-a82e-4fb7-9b32-6475ec970a04.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1223926393",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-22728070/original/3524f310-27e9-4787-806d-9b2f3fae4f46.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed",
+                "1 single bed"
+              ]
+            },
+            "id": "445084716",
+            "picture": "https://a0.muscache.com/im/pictures/c6d5c6b7-09aa-4791-9afe-3f6b0ddb513e.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Pool",
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1223926397",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-22728070/original/8ba71266-7db7-4c9b-a243-4d63ed2bfdca.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.7 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1223926458",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-22728070/original/131e136f-4d6f-48ac-842a-b49ef774aea8.jpeg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "4 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "22728070",
+        "isNewListing": false,
+        "isSuperhost": false,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.19985,
+        "listingObjType": "REGULAR",
+        "lng": 29.63722,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Kale apart",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 4,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Pool",
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 56,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.9,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "997 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 997,
+          "amountFormatted": "997 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 997,
+          "amountFormatted": "997 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "997 ₺ per night",
+            "price": "997 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.95
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1204031018",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-49645286/original/bcb09da2-0f75-4b42-8206-aae500c6c054.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bed",
+                "1 bedroom"
+              ]
+            },
+            "id": "1204026206",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-49645286/original/8bae5a73-e932-4698-9d1f-94553a1d3983.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1204025936",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-49645286/original/fad9f5be-8a0a-464a-9b38-5cf26976d2b6.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed",
+                "1 sofa bed"
+              ]
+            },
+            "id": "1204024127",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-49645286/original/05f09f0f-b29a-4fbf-8845-7655be06d4fe.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1204024449",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-49645286/original/7d21aa32-0a2d-4688-b033-9c5c3b5425c6.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.9 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1204024761",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-49645286/original/cea17f20-a34b-4957-b2e0-bab81ee312d4.jpeg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "3 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bed"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "49645286",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20367,
+        "listingObjType": "REGULAR",
+        "lng": 29.64236,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "PANORAMA SUİTE APART KAŞ - 8/ DENİZ  MANZARALI",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 3,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 12,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": "COMPACT_TRANSLATE",
+        "titleTooltipMessage": "The title of this stay has been automatically translated. Turn translation off in your language settings %COMPACT_HOST_GLOBE%."
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 1,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "1,014 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1014,
+          "amountFormatted": "1,014 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1014,
+          "amountFormatted": "1,014 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "1,014 ₺ per night",
+            "price": "1,014 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.9,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1207632090",
+            "picture": "https://a0.muscache.com/im/pictures/36538c2c-9311-4fcf-b4e8-b18c72e0d1a8.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bed",
+                "1 bedroom"
+              ]
+            },
+            "id": "1039415602",
+            "picture": "https://a0.muscache.com/im/pictures/1b49f635-a98f-40d1-bf3e-cd4ea413d2c5.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1060285630",
+            "picture": "https://a0.muscache.com/im/pictures/2c4faca2-f630-4ce6-aa76-55b90f066887.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 king bed"
+              ]
+            },
+            "id": "1207631617",
+            "picture": "https://a0.muscache.com/im/pictures/545f6692-44b2-4891-9787-ef1cbfddf4f8.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1207631301",
+            "picture": "https://a0.muscache.com/im/pictures/5cf2a96f-79f4-47b4-8cb1-65e7d9312b12.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 5 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1207631409",
+            "picture": "https://a0.muscache.com/im/pictures/bd2fe07b-8614-4590-ba6e-7f2eb4ab42fd.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "2 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bed"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "41190145",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.19504,
+        "listingObjType": "REGULAR",
+        "lng": 29.65369,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Hemera Suite 4",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 2,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 20,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "ca",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 1,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "693 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 693,
+          "amountFormatted": "693 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 693,
+          "amountFormatted": "693 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "693 ₺ per night",
+            "price": "693 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1253521398",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-52234909/original/9f9605b2-4acc-47fc-8ba9-633437372465.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "2 beds",
+                "1 bedroom"
+              ]
+            },
+            "id": "1253521019",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-52234909/original/3063675f-ca43-4636-9e04-ac3a7dec5de8.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1253521305",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-52234909/original/72b197a8-08bc-4e79-802d-8180149f58ce.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed",
+                "1 sofa bed"
+              ]
+            },
+            "id": "1253521177",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-52234909/original/2885ff08-535f-49b0-b380-d3701c9dada0.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1253521354",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-52234909/original/f506f297-b591-4d8c-97d1-89bcde67f9a9.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.9 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1253521392",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-52234909/original/517af1ee-6d19-4a27-84ef-b71bf37a83d4.jpeg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "3 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "52234909",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire apartment in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20381,
+        "listingObjType": "REGULAR",
+        "lng": 29.63972,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Sea Mist Suites Sea View Studio 1",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire apartment"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 3,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 9,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.9,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "1,049 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1049,
+          "amountFormatted": "1,049 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1049,
+          "amountFormatted": "1,049 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "1,049 ₺ per night",
+            "price": "1,049 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.98
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1171899550",
+            "picture": "https://a0.muscache.com/im/pictures/c26c87b1-4a97-4e0c-97ef-38184fdf3709.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "2 beds",
+                "1 bedroom"
+              ]
+            },
+            "id": "1171899622",
+            "picture": "https://a0.muscache.com/im/pictures/8da61728-400c-417c-920d-8db3a75f2d52.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "2 baths"
+              ]
+            },
+            "id": "1171899640",
+            "picture": "https://a0.muscache.com/im/pictures/9a1952f7-71e1-4edf-90dc-6790c20cd66f.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed",
+                "1 sofa bed"
+              ]
+            },
+            "id": "1171900272",
+            "picture": "https://a0.muscache.com/im/pictures/0f50f7b3-7880-4aef-9bb2-2fbf638165c4.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1173414955",
+            "picture": "https://a0.muscache.com/im/pictures/eea3ec98-d955-4dd7-b4b6-ebf3a6ef8621.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.9 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1171900446",
+            "picture": "https://a0.muscache.com/im/pictures/39704171-f18f-464c-af01-a015e12448e6.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "3 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 baths"
+          }
+        ],
+        "id": "49527422",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire home in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20276,
+        "listingObjType": "REGULAR",
+        "lng": 29.64301,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "WHİTE ROSE APART",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire home"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 3,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 8,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 1,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "714 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 714,
+          "amountFormatted": "714 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 714,
+          "amountFormatted": "714 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "714 ₺ per night",
+            "price": "714 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.78,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1381551271",
+            "picture": "https://a0.muscache.com/im/pictures/9768b3d0-be78-4fc9-8814-15c1705fef43.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "5 beds",
+                "3 bedrooms"
+              ]
+            },
+            "id": "1064976031",
+            "picture": "https://a0.muscache.com/im/pictures/c826aa02-eb61-4218-8ff5-1ade278abb33.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "3 baths"
+              ]
+            },
+            "id": "1064976039",
+            "picture": "https://a0.muscache.com/im/pictures/e5efcd72-b754-41e4-bda0-bb606b27b6a7.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "3 double beds",
+                "2 sofa beds"
+              ]
+            },
+            "id": "1064976041",
+            "picture": "https://a0.muscache.com/im/pictures/9bc9d830-da67-4a4e-a85e-73720b4d97b4.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1064976042",
+            "picture": "https://a0.muscache.com/im/pictures/122a0ee8-5872-4524-91d3-fd4ecd52b5ce.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.7 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1064976044",
+            "picture": "https://a0.muscache.com/im/pictures/b622c651-1554-4d0d-86e6-d4e30469f6d1.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "6 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "5 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 baths"
+          }
+        ],
+        "id": "45347176",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20427,
+        "listingObjType": "REGULAR",
+        "lng": 29.64021,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Spacious and spacious bathroom and toilet in every 3 room",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 6,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 18,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": "COMPACT_TRANSLATE",
+        "titleTooltipMessage": "The title of this stay has been automatically translated. Turn translation off in your language settings %COMPACT_HOST_GLOBE%."
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": false,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.95,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "418 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 418,
+          "amountFormatted": "418 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 418,
+          "amountFormatted": "418 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "418 ₺ per night",
+            "price": "418 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.95
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": null,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "No reviews yet"
+              ]
+            },
+            "id": "1201113912",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44103756/original/193724f1-2fcd-45b8-ac35-7d7a524ac977.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bed",
+                "1 bedroom"
+              ]
+            },
+            "id": "1201113913",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44103756/original/f8e0e0dd-7352-4067-b4f2-a7df2020f220.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1201113914",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44103756/original/d8e8aaa0-7b50-49c8-a6aa-2d7ad9c3928d.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 sofa bed"
+              ]
+            },
+            "id": "1201113915",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44103756/original/35ed5df2-7edd-4a7f-95ea-96f0e712eb58.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen"
+              ]
+            },
+            "id": "1201113916",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44103756/original/29187c0e-e1d1-4fb7-b957-36c5c386a603.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "No reviews yet"
+              ]
+            },
+            "id": "1201113917",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44103756/original/722eefda-c738-4078-a897-e16d587e7f55.jpeg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "3 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bed"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "50463286",
+        "isNewListing": false,
+        "isSuperhost": false,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20122,
+        "listingObjType": "REGULAR",
+        "lng": 29.63982,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Summer Apartment, 1 Bedroom Suite, in the Center of Eyebrow",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 3,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 0,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": "COMPACT_TRANSLATE",
+        "titleTooltipMessage": "The title of this stay has been automatically translated. Turn translation off in your language settings %COMPACT_HOST_GLOBE%."
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.85,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "816 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 816,
+          "amountFormatted": "816 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 816,
+          "amountFormatted": "816 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "816 ₺ per night",
+            "price": "816 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.95
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1023379540",
+            "picture": "https://a0.muscache.com/im/pictures/e718ac1c-87ab-471e-9715-342aaaa91796.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "3 beds",
+                "2 bedrooms"
+              ]
+            },
+            "id": "1023379486",
+            "picture": "https://a0.muscache.com/im/pictures/77058556-4f9e-48a0-9ea5-1ebbb034d35b.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1023379493",
+            "picture": "https://a0.muscache.com/im/pictures/304300e4-18a4-497f-a42f-9e3ad73170b1.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1023379494",
+            "picture": "https://a0.muscache.com/im/pictures/b2f87474-00c2-42e4-b502-c6ed82c9b726.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 5 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1023379496",
+            "picture": "https://a0.muscache.com/im/pictures/8bf83d76-8bd1-49ca-a40e-659c27d82186.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1023379499",
+            "picture": "https://a0.muscache.com/im/pictures/959fa88a-19b7-4330-8d72-7bc7626872c5.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "5 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "41614142",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.19569,
+        "listingObjType": "REGULAR",
+        "lng": 29.65399,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Elfe Apart 1 Begonvil 2+1 garden",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 5,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 15,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "tr",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.85,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "571 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 571,
+          "amountFormatted": "571 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 571,
+          "amountFormatted": "571 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "571 ₺ per night",
+            "price": "571 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.95
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.57,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "586168982",
+            "picture": "https://a0.muscache.com/im/pictures/2df69bc0-c68e-41cb-b6ae-675fe5139a54.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bed",
+                "1 bedroom"
+              ]
+            },
+            "id": "586169094",
+            "picture": "https://a0.muscache.com/im/pictures/b395feff-1591-480b-a181-7ce3bd21058a.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "586169145",
+            "picture": "https://a0.muscache.com/im/pictures/6b201853-3b2c-4220-8f4e-66fcdc702dce.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed"
+              ]
+            },
+            "id": "586169218",
+            "picture": "https://a0.muscache.com/im/pictures/94b83c8c-28f7-44c8-b1cc-94a35f33dced.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Pool",
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "586169472",
+            "picture": "https://a0.muscache.com/im/pictures/8beaa4b8-67fe-4240-9753-ddb3d0b8fb2d.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.6 out of 5 for cleanliness"
+              ]
+            },
+            "id": "586169126",
+            "picture": "https://a0.muscache.com/im/pictures/18899ffa-d6e3-4312-babb-b50340d7d4a8.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "2 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bed"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "28827146",
+        "isNewListing": false,
+        "isSuperhost": false,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire villa in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.26987,
+        "listingObjType": "REGULAR",
+        "lng": 29.42106,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Honeymoon Villa with Secluded Pool & Sea Views",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire villa"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 2,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Pool",
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 14,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": false,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 1,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "1,693 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1693,
+          "amountFormatted": "1,693 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1693,
+          "amountFormatted": "1,693 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "1,693 ₺ per night",
+            "price": "1,693 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1297289847",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-53653036/original/ed67fd62-bedc-4610-b8d4-91aa34c3c7f8.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "4 beds",
+                "2 bedrooms"
+              ]
+            },
+            "id": "1297289948",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-53653036/original/c9ba0bd4-5313-4e9e-a9fd-db2dbe5166c0.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1336358569",
+            "picture": "https://a0.muscache.com/im/pictures/9a9d759a-7a3e-4ead-a517-f3f4767d02a9.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1297290204",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-53653036/original/83ca195e-5aaf-4c17-853c-bbb17b4f0b90.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 5 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1336358914",
+            "picture": "https://a0.muscache.com/im/pictures/002e64b5-5dd0-4ea8-91f9-e28d211f69f2.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1297290226",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-53653036/original/ddb48a08-ce71-426f-a652-ad88640be7c1.jpeg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "5 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "4 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "53653036",
+        "isNewListing": false,
+        "isSuperhost": false,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20016,
+        "listingObjType": "REGULAR",
+        "lng": 29.64749,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Slope Apart Küçük Çakıl",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 5,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 3,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": "COMPACT_TRANSLATE",
+        "titleTooltipMessage": "The title of this stay has been automatically translated. Turn translation off in your language settings %COMPACT_HOST_GLOBE%."
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": false,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.6,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "563 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 563,
+          "amountFormatted": "563 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 563,
+          "amountFormatted": "563 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "563 ₺ per night",
+            "price": "563 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1211117492",
+            "picture": "https://a0.muscache.com/im/pictures/375992aa-5f4d-4e81-9644-68d39a57befe.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "3 beds",
+                "1 bedroom"
+              ]
+            },
+            "id": "1211117504",
+            "picture": "https://a0.muscache.com/im/pictures/ffff0929-74c7-4a8c-98a9-9d6f97652dda.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1211117479",
+            "picture": "https://a0.muscache.com/im/pictures/05e8533b-0718-4da2-a24e-a60b114f755b.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed",
+                "2 sofa beds"
+              ]
+            },
+            "id": "1211117506",
+            "picture": "https://a0.muscache.com/im/pictures/5e811355-e532-4957-bcd2-e6c7000c3246.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen"
+              ]
+            },
+            "id": "1211117495",
+            "picture": "https://a0.muscache.com/im/pictures/ecdd7bea-640a-4fd1-9a19-d23aeab7b4d1.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 5 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1211117500",
+            "picture": "https://a0.muscache.com/im/pictures/ebca88db-4062-44a1-b803-a3d60f4f8499.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "4 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "50791580",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.19,
+        "listingObjType": "REGULAR",
+        "lng": 29.65776,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Kuytu DeryaDeniz Apart2 - Sea View",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 4,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 11,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": "COMPACT_TRANSLATE",
+        "titleTooltipMessage": "The title of this stay has been automatically translated. Turn translation off in your language settings %COMPACT_HOST_GLOBE%."
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 1,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "1,020 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1020,
+          "amountFormatted": "1,020 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1020,
+          "amountFormatted": "1,020 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "1,020 ₺ per night",
+            "price": "1,020 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1177191409",
+            "picture": "https://a0.muscache.com/im/pictures/63898a1b-3df1-4de9-9d94-baa129636ccc.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "3 beds",
+                "2 bedrooms"
+              ]
+            },
+            "id": "1177191670",
+            "picture": "https://a0.muscache.com/im/pictures/cc956622-d407-4685-900d-44d00f03df41.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1177191848",
+            "picture": "https://a0.muscache.com/im/pictures/ff0b41d9-fde4-4542-8ec6-0ac65be24193.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed",
+                "2 single beds"
+              ]
+            },
+            "id": "1177192094",
+            "picture": "https://a0.muscache.com/im/pictures/5cf3beb0-c6b6-4bd0-a28d-1bff05d65b76.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1177192257",
+            "picture": "https://a0.muscache.com/im/pictures/9bfed049-4a49-49fa-b9fe-ebc9c6d5fdd5.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 5 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1177192470",
+            "picture": "https://a0.muscache.com/im/pictures/bc98d773-2c81-438c-b7b8-dee9c6827ade.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "4 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "49744710",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire townhouse in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.2001,
+        "listingObjType": "REGULAR",
+        "lng": 29.64223,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Argentvm  House Kaş",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire townhouse"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 4,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 17,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "tr",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 1,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "1,654 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1654,
+          "amountFormatted": "1,654 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 1654,
+          "amountFormatted": "1,654 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "1,654 ₺ per night",
+            "price": "1,654 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.67,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "324027015",
+            "picture": "https://a0.muscache.com/im/pictures/35d00944-99db-4514-882f-c2f704d4750f.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "3 beds",
+                "2 bedrooms"
+              ]
+            },
+            "id": "324025962",
+            "picture": "https://a0.muscache.com/im/pictures/dda0d2c7-795c-4742-8994-87ccbc88de0c.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "324025798",
+            "picture": "https://a0.muscache.com/im/pictures/f54e14ce-960a-441f-8606-931194c052da.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed",
+                "2 single beds"
+              ]
+            },
+            "id": "324025667",
+            "picture": "https://a0.muscache.com/im/pictures/82548f7b-7dfb-4d6f-a39a-27d610545a38.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "324025815",
+            "picture": "https://a0.muscache.com/im/pictures/160b83f6-2c01-4d8f-ae2d-6c98b9ed1af3.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.8 out of 5 for cleanliness"
+              ]
+            },
+            "id": "324027563",
+            "picture": "https://a0.muscache.com/im/pictures/6598b25a-1d4e-475f-8405-d6d46d8eca5a.jpg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "5 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "3 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "18850656",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.2018,
+        "listingObjType": "REGULAR",
+        "lng": 29.64927,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "JASMINE APART  2",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 5,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 54,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.85,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "700 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 700,
+          "amountFormatted": "700 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 700,
+          "amountFormatted": "700 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "700 ₺ per night",
+            "price": "700 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 0.95
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 4.84,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1141339169",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44025262/original/45a7ab11-bdf4-4bef-b188-7e7deef2393b.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "4 beds",
+                "2 bedrooms"
+              ]
+            },
+            "id": "1141339605",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44025262/original/8f8549d3-672d-4c36-bb54-7e6cf072ce69.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1141337877",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44025262/original/91f91c08-526c-41e7-a5c5-217d80ac427c.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1141335053",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44025262/original/2be410ff-d0e5-4770-aec0-83a3496fe582.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.7 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1141340159",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44025262/original/6885f7d4-595d-4479-8370-d70349432778.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1141340417",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-44025262/original/b61dd451-f5ba-4e0d-be6b-f150717b0f5c.jpeg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "6 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "2 bedrooms"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "4 beds"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "44025262",
+        "isNewListing": false,
+        "isSuperhost": false,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire rental unit in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.20066,
+        "listingObjType": "REGULAR",
+        "lng": 29.63847,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Akdam Apart No: 2",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire rental unit"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 6,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 19,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "tr",
+        "titlePrependedIconId": null,
+        "titleTooltipMessage": null
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 0.95,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "914 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 914,
+          "amountFormatted": "914 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 914,
+          "amountFormatted": "914 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "914 ₺ per night",
+            "price": "914 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    },
+    {
+      "__typename": "ExploreListingItem",
+      "listing": {
+        "__typename": "ExploreListing",
+        "avgRating": 5,
+        "businessHostLabel": null,
+        "contextualPictures": [
+          {
+            "__typename": "ExplorePicture",
+            "caption": null,
+            "id": "1352818482",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-51614244/original/647666e9-a784-49a1-abec-ef2c76f8504c.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bed",
+                "1 bedroom"
+              ]
+            },
+            "id": "1352818506",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-51614244/original/cd87bc0a-f8cb-4936-8341-1533a15f1548.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 bath"
+              ]
+            },
+            "id": "1236035523",
+            "picture": "https://a0.muscache.com/im/pictures/75481085-6fad-455f-b2d9-1a3e7ca6ade2.jpg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "1 double bed"
+              ]
+            },
+            "id": "1352818479",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-51614244/original/903c659e-90a2-44a0-b715-7915ce2e34ef.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Wifi",
+                "Kitchen",
+                "Washer"
+              ]
+            },
+            "id": "1352818492",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-51614244/original/a2c8b950-1d7b-4e6a-b66f-b93a192e92ee.jpeg?im_w=720"
+          },
+          {
+            "__typename": "ExplorePicture",
+            "caption": {
+              "__typename": "ExploreKickerContent",
+              "kickerBadge": null,
+              "messages": [
+                "Rated 4.9 out of 5 for cleanliness"
+              ]
+            },
+            "id": "1352818480",
+            "picture": "https://a0.muscache.com/im/pictures/miso/Hosting-51614244/original/42c43721-7adb-4ff7-8ac5-cf20751ac782.jpeg?im_w=720"
+          }
+        ],
+        "contextualPicturesPageInfo": {
+          "__typename": "PageInfo",
+          "hasNextPage": true,
+          "endCursor": "NQ=="
+        },
+        "formattedBadges": [
+          {
+            "__typename": "ExploreFormattedBadge",
+            "backgroundColor": "rgba(255, 255, 255, 0.95)",
+            "borderColor": "rgba(0, 0, 0, 0.2)",
+            "text": "SUPERHOST",
+            "textColor": "#222222"
+          }
+        ],
+        "homeDetails": [
+          {
+            "__typename": "BasicListItem",
+            "title": "3 guests"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bedroom"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bed"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "1 bath"
+          }
+        ],
+        "id": "51614244",
+        "isNewListing": false,
+        "isSuperhost": true,
+        "kickerContent": {
+          "__typename": "ExploreKickerContent",
+          "kickerBadge": null,
+          "messages": [
+            "Entire condo in Kaş"
+          ],
+          "textColor": null
+        },
+        "lat": 36.2683,
+        "listingObjType": "REGULAR",
+        "lng": 29.41333,
+        "localizedDistanceText": null,
+        "locationTitle": null,
+        "mainSectionMessage": null,
+        "mainSectionMessages": [],
+        "name": "Super central fully equipped apartment in Kalkan/Kas",
+        "overview": [
+          {
+            "__typename": "BasicListItem",
+            "title": "Entire condo"
+          },
+          {
+            "__typename": "BasicListItem",
+            "title": "Kaş"
+          }
+        ],
+        "pdpDisplayExtensions": [],
+        "pdpType": "MARKETPLACE",
+        "pdpUrlType": "ROOMS",
+        "personCapacity": 3,
+        "pictureUrls": [],
+        "previewAmenityNames": [
+          "Wifi",
+          "Kitchen",
+          "Washer"
+        ],
+        "relaxedFilterLabels": null,
+        "reviewsCount": 14,
+        "roomTypeCategory": "entire_home",
+        "roomTypeId": null,
+        "showPhotoSwipeIndicator": true,
+        "summary": null,
+        "tierId": 0,
+        "titleLocale": "en",
+        "titlePrependedIconId": "COMPACT_TRANSLATE",
+        "titleTooltipMessage": "The title of this stay has been automatically translated. Turn translation off in your language settings %COMPACT_HOST_GLOBE%."
+      },
+      "listingParamOverrides": null,
+      "pricingQuote": {
+        "__typename": "ExplorePricingQuote",
+        "applicableDiscounts": null,
+        "barDisplayPriceWithoutDiscount": null,
+        "canInstantBook": true,
+        "displayRateDisplayStrategy": null,
+        "monthlyPriceFactor": 1,
+        "price": null,
+        "priceDropDisclaimer": null,
+        "priceString": "164 ₺",
+        "rate": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 164,
+          "amountFormatted": "164 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "rateType": "nightly",
+        "rateWithoutDiscount": null,
+        "rateWithServiceFee": {
+          "__typename": "ExploreCurrencyAmount",
+          "amount": 164,
+          "amountFormatted": "164 ₺",
+          "currency": "TRY",
+          "isMicrosAccuracy": false
+        },
+        "secondaryPriceString": null,
+        "shouldShowFromLabel": false,
+        "structuredStayDisplayPrice": {
+          "__typename": "StructuredDisplayPrice",
+          "primaryLine": {
+            "__typename": "QualifiedDisplayPriceLine",
+            "displayComponentType": "QUALIFIED_DISPLAY_PRICE_LINE",
+            "accessibilityLabel": "164 ₺ per night",
+            "price": "164 ₺",
+            "qualifier": "night",
+            "concatQualifierLeft": false,
+            "trailingContent": null
+          },
+          "secondaryLine": null,
+          "explanationData": null,
+          "explanationDataDisplayPosition": "SECONDARY_LINE",
+          "explanationDataDisplayPriceTriggerType": null,
+          "layout": "COLUMN"
+        },
+        "totalPriceDisclaimer": null,
+        "totalPriceWithoutDiscount": null,
+        "weeklyPriceFactor": 1
+      },
+      "luxuryInfo": null,
+      "verified": {
+        "__typename": "ExploreVerified",
+        "badgeSecondaryText": "Verified",
+        "badgeText": "Plus",
+        "enabled": false,
+        "kickerBadgeType": "filled"
+      },
+      "verifiedCard": false
+    }
+  ]
