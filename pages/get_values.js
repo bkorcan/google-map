@@ -1,4 +1,4 @@
-import { res } from "../components/data";
+import res from "../components/data.json";
 export default function Home() {
   // const items =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items;
   // const listing =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items[1].listing;
@@ -17,10 +17,11 @@ export default function Home() {
     
     // const items =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[4].section.child.section.items
     // const items =res[0].niobeMinimalClientData[0][1].data.presentation.explore.sections.sections[3].section.child.section.items;
-    const items = res[0].data.presentation.explore.sections.sections[2].section.child.section.items
-    // const items = res[0].data.presentation.explore.sections.sections[2].section.child.section.items
-    console.log(items[2].listing.id)
-    console.log(items[2].pricingQuote.priceString)
+    const items = res.data.presentation.explore.sections.sections[2].section.child.section.items
+    const arrayOfPictures =items[1].listing.contextualPictures.map(x=>x.picture)
+    console.log(arrayOfPictures[0])
+    // console.log(items[2].listing.id)
+    // console.log(items[2].pricingQuote.priceString)
 
    return (
     <div>

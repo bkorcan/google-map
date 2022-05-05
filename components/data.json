@@ -1,4 +1,4 @@
-export const res=[
+
     {
         "data": {
             "presentation": {
@@ -26676,4 +26676,3 @@ export const res=[
             }
         }
     }
-]

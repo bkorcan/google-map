@@ -4,10 +4,12 @@ import {
 import {
   GoogleMap, useLoadScript, Marker, MarkerClusterer, OverlayView
 } from "@react-google-maps/api";
-import { res } from "../components/data"
+import res from "../components/data.json";
 import { Stepper } from "../components/stepper";
 import { useStore } from '../components/state_map'
 import Style from '../styles/map.module.css'
+import Divider from '@mui/material/Divider';
+
 
 
 export default function Home() {
@@ -23,7 +25,7 @@ export default function Home() {
 function Map() {
   const [screenWidth, setScreenWidth] = useState(0)
   const [screenHeight, setScreenHeight] = useState(0)
-  const [id,setId] =useState(0)
+  const [id, setId] = useState(0)
   // ////////////////////////////////////////////////////////
   const node = useRef()
   useEffect(
@@ -44,11 +46,11 @@ function Map() {
       return;
     }, []
   );
-//////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////
 
 
   const mapRef = useRef();
-  const center = useMemo(() => ({ lat: 36.2718, lng: 29.4 }), []);
+  const center = useMemo(() => ({ lat: 36.200, lng: 29.645 }), []);
   // const zoom =useMemo(()=> (mapRef.current.zoom),[])
   const options = useMemo(() => ({
     disableDefaultUI: false,
@@ -64,116 +66,134 @@ function Map() {
   const setMarkerClick = useStore(state => state.setMarkerClick)
 
   return (
-    <div className={Style.mainContainer}>  
-    <div className={Style.card}>
-      <div className={Style.cardTitle} >
-        <h2 style={{color:'#666'}} >Kalkan Villas</h2>
+    <div className={Style.mainContainer}>
+      <div className={Style.card}>
+        <div className={Style.cardTitle} >
+          <h2 style={{ color: '#666' }} >Kalkan Villas</h2>
+        </div>
+        <div style={{ height: 10, backgroundColor: '#fff' }} ></div>
+
+        <Stepper id={1} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={2} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={3} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={4} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={5} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={6} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={7} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={8} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={9} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={10} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={11} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={12} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={13} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={14} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={15} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={16} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={17} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={18} />
+        <Divider style={{ height: 20, marginBottom: 30 }} />
+        <div style={{ height: 2, backgroundColor: '#666', marginBottom: 10 }}></div>
+        <Stepper id={19} />
+
       </div>
-      <div style={{height:10, backgroundColor:'#fff'}} ></div>
-      
-    <Stepper id={1} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={2} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={3} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={4} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={5} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={6} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={7} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={8} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={9} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={10} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={11} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={12} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={13} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={14} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={15} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={16} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={17} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={18} />
-    <div style={{height:40, backgroundColor:'#fff'}} ></div>
-    <Stepper id={19} />
+      <div ref={node} className={Style.mapContainer} >
 
-    </div>
-    <div ref={node} className={Style.mapContainer} >
+        <GoogleMap zoom={15} center={center} mapContainerClassName="map-container"
+          options={options}
+          onLoad={onLoad}
+          onClick={() => {
+            console.log(viewBoxClick)
+            console.log(markerClick)
+            viewBoxClick && markerClick ? null : setCall(false)
+            // console.log(mapRef.current.zoom)
+          }}
+        >
+          <MarkerClusterer>
+            {() =>
+              houses.map((house) => (
+                <Marker
+                  key={house.position.lat}
+                  position={house.position}
+                  // clusterer={clusterer}
+                  onClick={() => {
+                    setId(house.id)
+                    // console.log(house.id); 
+                    setCall(true);
+                    setMarkerClick(true)
+                    const y = ((mapRef.current.getBounds().getNorthEast().lat() - mapRef.current.getBounds().getSouthWest().lat())) / screenHeight * 400
+                    const x = ((mapRef.current.getBounds().getNorthEast().lng() - mapRef.current.getBounds().getSouthWest().lng())) / screenWidth * 370
+                    let _lng = 0
+                    let _lat = 0
+                    house.position.lng > mapRef.current.getCenter().lng() ?
+                      _lng = house.position.lng - x
+                      : _lng = house.position.lng
 
-      <GoogleMap zoom={15} center={center} mapContainerClassName="map-container"
-        options={options}
-        onLoad={onLoad}
-        onClick={() => {
-          console.log(viewBoxClick)
-          console.log(markerClick)
-          viewBoxClick && markerClick ? null  : setCall(false)
-          // console.log(mapRef.current.zoom)
-        }}
-      >
-        <MarkerClusterer>
-          {() =>
-            houses.map((house) => (
-              <Marker
-                key={house.position.lat}
-                position={house.position}
-                // clusterer={clusterer}
-                onClick={() => {
-                  setId(house.id)
-                  // console.log(house.id); 
-                  setCall(true);
-                  setMarkerClick(true)
-                  const y = ((mapRef.current.getBounds().getNorthEast().lat() - mapRef.current.getBounds().getSouthWest().lat())) / screenHeight * 400
-                  const x = ((mapRef.current.getBounds().getNorthEast().lng() - mapRef.current.getBounds().getSouthWest().lng())) / screenWidth * 370
-                  let _lng = 0
-                  let _lat = 0
-                  house.position.lng > mapRef.current.getCenter().lng() ?
-                    _lng = house.position.lng - x
-                    : _lng = house.position.lng
+                    house.position.lat < mapRef.current.getCenter().lat() ?
+                      _lat = house.position.lat + y
+                      : _lat = house.position.lat
+                    setViewCenter({ lat: _lat, lng: _lng })
 
-                  house.position.lat < mapRef.current.getCenter().lat() ?
-                    _lat = house.position.lat + y
-                    : _lat = house.position.lat
-                  setViewCenter({ lat: _lat, lng: _lng })
-
-                }}
-                label={house.price}
-                icon={{
-                  path:
-                    "M-9,-5 l18,0 l0,9 l-18,0 l0,-9",
-                  fillColor: "white",
-                  fillOpacity: 1,
-                  scale: 3,
-                  strokeColor: "red",
-                  strokeWeight: 1.5,
-                }}
-              />
-            ))
+                  }}
+                  label={house.price}
+                  icon={{
+                    path:
+                      "M-9,-5 l18,0 l0,9 l-18,0 l0,-9",
+                    fillColor: "white",
+                    fillOpacity: 1,
+                    scale: 3,
+                    strokeColor: "red",
+                    strokeWeight: 1.5,
+                  }}
+                />
+              ))
+            }
+          </MarkerClusterer>
+          {call ?
+            <OverlayView
+              position={viewCenter}
+              mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
+            >
+              <Stepper id={id} />
+            </OverlayView>
+            : <>  </>
           }
-        </MarkerClusterer>
-        {call ? 
-          <OverlayView 
-            position={viewCenter}
-            mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
-          >
-            <Stepper id={id} />
-          </OverlayView>
-          : <>  </>
-        }
 
-      </GoogleMap>
-    </div>
+        </GoogleMap>
+      </div>
     </div>
   );
 }
@@ -181,27 +201,27 @@ function Map() {
 const generateHouses = () => {
   // const spe= '\u20ba'
   // dollar sign unicode
-  
-  const items0 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[0];
-  const items1 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[1];
-  const items2 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[2];
-  const items3 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[3];
-  const items4 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[4];
-  const items5 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[5];
-  const items6 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[6];
-  const items7 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[7];
-  const items8 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[8];
-  const items9 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[9];
-  const items10 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[10];
-  const items11 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[11];
-  const items12 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[12];
-  const items13 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[13];
-  const items14 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[14];
-  const items15 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[15];
-  const items16 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[16];
-  const items17= res[0].data.presentation.explore.sections.sections[2].section.child.section.items[17];
-  const items18 = res[0].data.presentation.explore.sections.sections[2].section.child.section.items[18];
-  const items19= res[0].data.presentation.explore.sections.sections[2].section.child.section.items[19];
+
+  const items0 = res.data.presentation.explore.sections.sections[2].section.child.section.items[0];
+  const items1 = res.data.presentation.explore.sections.sections[2].section.child.section.items[1];
+  const items2 = res.data.presentation.explore.sections.sections[2].section.child.section.items[2];
+  const items3 = res.data.presentation.explore.sections.sections[2].section.child.section.items[3];
+  const items4 = res.data.presentation.explore.sections.sections[2].section.child.section.items[4];
+  const items5 = res.data.presentation.explore.sections.sections[2].section.child.section.items[5];
+  const items6 = res.data.presentation.explore.sections.sections[2].section.child.section.items[6];
+  const items7 = res.data.presentation.explore.sections.sections[2].section.child.section.items[7];
+  const items8 = res.data.presentation.explore.sections.sections[2].section.child.section.items[8];
+  const items9 = res.data.presentation.explore.sections.sections[2].section.child.section.items[9];
+  const items10 = res.data.presentation.explore.sections.sections[2].section.child.section.items[10];
+  const items11 = res.data.presentation.explore.sections.sections[2].section.child.section.items[11];
+  const items12 = res.data.presentation.explore.sections.sections[2].section.child.section.items[12];
+  const items13 = res.data.presentation.explore.sections.sections[2].section.child.section.items[13];
+  const items14 = res.data.presentation.explore.sections.sections[2].section.child.section.items[14];
+  const items15 = res.data.presentation.explore.sections.sections[2].section.child.section.items[15];
+  const items16 = res.data.presentation.explore.sections.sections[2].section.child.section.items[16];
+  const items17 = res.data.presentation.explore.sections.sections[2].section.child.section.items[17];
+  const items18 = res.data.presentation.explore.sections.sections[2].section.child.section.items[18];
+  const items19 = res.data.presentation.explore.sections.sections[2].section.child.section.items[19];
   const spe = '\u0024'
 
   const _houses = [
