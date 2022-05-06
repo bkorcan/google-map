@@ -1,13 +1,5 @@
 bk@bk:~$ curl -o kalkan-8.txt --user-agent "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322)" https://www.airbnb.com/s/Kalkan-Ka%C5%9F/homes/homes?refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=june&flexible_trip_dates%5B%5D=may&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&query=Kalkan%2C%2007580%20Ka%C5%9F%2FAntalya%2C%20Turkey&place_id=ChIJFSEg39AswBQR-M3p-nvb-3U&source=structured_search_input_header&search_type=autocomplete_click&tab_id=home_tab&federated_search_session_id=3937bf61-0a6e-4100-98fc-cdd561d3fe93&pagination_search=true&items_offset=140&section_offset=2
 
-
-Select('listing',Select('data',Get(Ref(Collection('text'), '330012242797940299'))))
-Select('id',Select('listing',Select('data',Get(Ref(Collection('text'), '330012242797940299')))))
-Select('id',Select('listing',Select('data',Get(Ref(Collection('datca'), '330075890570495564')))))
-
-
-
-
 Select(
   "id",
   Select(
@@ -23,6 +15,20 @@ Match('price_kas','50123272')
 Select('ref',Get(Match('id_by_listing_kas','50123272')))
 #Update priceString
 Update(Select('ref',Get(Match('id_by_listing_kas','50123272'))), {data:{priceString:'200'}})
+#Get ref ids
+Paginate(Match('all_ref_ids_gocek'))
+# Play with Var(x)
+Map(Select("data",Paginate(Match('all_ref_ids_gocek'))),Lambda('x',Var('x')))
+
+#Select data by ref.id
+Select("data", Get(Ref(Collection("kas"), "330286461123297868")))
+Select("data", Get(Ref(Collection("kas"), Var('x'))))
+#Map through all collection 
+
+#Take n number List Item
+Take(1,Map(Select("data",Paginate(Match('all_ref_ids_gocek'))),Lambda('x',  Select("data", Get(Ref(Collection("gocek"), Var('x')))) )))
+
+
 #Fauna Login
 fauna cloud-login
 fauna import --path ./copy.json --collection=kas --secret= --append
