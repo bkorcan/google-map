@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-export default function () {
+export default function GetItems () {
 
     const [data, setData] = useState([])
     useEffect(
@@ -25,7 +25,7 @@ export default function () {
                     {
                         data.map(item =>
                             <li key={item.listing.id}>
-                                {item.listing.id}
+                                {item.listing.avgRating}
                             </li>
                         )
                         }

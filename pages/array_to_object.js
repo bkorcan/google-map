@@ -1,4 +1,5 @@
 import res from "../components/data.json";
+
 const baseURL = res.data.presentation.explore.sections.sections[2].section.child.section.items
 const _data = []
 let obj = {}
@@ -8,4 +9,9 @@ _data.map( (item,key)=> obj[key]= JSON.parse(item))
 console.log(obj)
 console.log(obj[1].amount)
 
-export default function Home() {return <>  </>}
+export default function Home() {
+
+    return (
+        <>  </>
+    )
+}
