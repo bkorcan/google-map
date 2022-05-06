@@ -12,7 +12,7 @@ import Style from '../styles/stepper.module.css'
 import { Grid } from "@mui/material";
 import res from "../components/data.json";
 import StarIcon from '@mui/icons-material/Star';
-import { useCallback, useRef, useEffect,useState } from 'react';
+import { useCallback, useEffect} from 'react';
 import { useStore } from './state_map'
 
 
