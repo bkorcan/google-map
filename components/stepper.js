@@ -19,7 +19,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 function Stepper({ id }) {
-
+  console.log('hey')
   const itemsData = useStore(state => state.itemsData)
   
   // lets code click outside
@@ -153,6 +153,7 @@ function HomeDetails({ id ,itemsData}) {
 }
 
 function ContentNew({ id,itemsData }) {
+  // console.log('hey')
   const items =itemsData[id];
   const picturesLength = items.listing.contextualPictures.length
   const arrayOfPictures = items.listing.contextualPictures.map(x => x.picture)

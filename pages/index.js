@@ -7,7 +7,6 @@ import {
 import { Stepper } from "../components/stepper";
 import { useStore } from '../components/state_map'
 import Style from '../styles/map.module.css'
-import Divider from '@mui/material/Divider';
 import GetItems from "./get_items";
 
 
@@ -27,6 +26,12 @@ function Map() {
   const [screenWidth, setScreenWidth] = useState(0)
   const [screenHeight, setScreenHeight] = useState(0)
   const [id, setId] = useState(0)
+
+
+  // ////////////////////////////////////////////////////////
+  // const ListView = useMemo(() => expensiveCalculation(count), [count]);
+
+const ListView =useMemo(()=>list(itemsData),[itemsData])
   // ////////////////////////////////////////////////////////
   const node = useRef()
   useEffect(
@@ -58,107 +63,109 @@ function Map() {
     clickableIcons: false,
   }), []);
   const onLoad = useCallback((map) => (mapRef.current = map), []);
-  // const houses = useMemo(() => generateHouses(), []);
+   
   const [viewCenter, setViewCenter] = useState({ lat: 36.2748, lng: 29.403 })
   const [call, setCall] = useState(false)
-  
+
   const callData = useStore(state => state.callData)
 
   const viewBoxClick = useStore(state => state.viewBoxClick)
   const markerClick = useStore(state => state.markerClick)
   const setMarkerClick = useStore(state => state.setMarkerClick)
+  const callListView = useStore(state => state.callListView)
 
   return (
-      
-        <div>
-        {callData && <GetItems/>}
 
-         {itemsData &&
-          <div className={Style.mainContainer}>
-            <div ref={node} className={Style.mapContainer} >
+    <div>
+      {callData && <GetItems />}
 
-              <GoogleMap zoom={15} center={center} mapContainerClassName="map-container"
-                options={options}
-                onLoad={onLoad}
-                onClick={() => {
-                  console.log(viewBoxClick)
-                  console.log(markerClick)
-                  viewBoxClick && markerClick ? null : setCall(false)
-                  // console.log(mapRef.current.zoom)
-                }}
-              >
-                <MarkerClusterer>
-                  {() =>
-                    itemsData.map((house, key) => (
+      {itemsData &&
+        <div className={Style.mainContainer}>
 
-                      <Marker
-                        key={house.listing.lat}
-                        position={{ lat: house.listing.lat, lng: house.listing.lng }}
-                        // clusterer={clusterer}
-                        onClick={() => {
-                          setId(key)
-                          // console.log(house.id); 
-                          setCall(true);
-                          setMarkerClick(true)
-                          const y = ((mapRef.current.getBounds().getNorthEast().lat() - mapRef.current.getBounds().getSouthWest().lat())) / screenHeight * 400
-                          const x = ((mapRef.current.getBounds().getNorthEast().lng() - mapRef.current.getBounds().getSouthWest().lng())) / screenWidth * 370
-                          let _lng = 0
-                          let _lat = 0
-                          house.listing.lng > mapRef.current.getCenter().lng() ?
-                            _lng = house.listing.lng - x
-                            : _lng = house.listing.lng
 
-                          house.listing.lat < mapRef.current.getCenter().lat() ?
-                            _lat = house.listing.lat + y
-                            : _lat = house.listing.lat
-                          setViewCenter({ lat: _lat, lng: _lng })
-
-                        }}
-                        label={house.pricingQuote.priceString}
-                        icon={{
-                          path:
-                            "M-9,-5 l18,0 l0,9 l-18,0 l0,-9",
-                          fillColor: "white",
-                          fillOpacity: 1,
-                          scale: 3,
-                          strokeColor: "red",
-                          strokeWeight: 1.5,
-                        }}
-                      />
-                    ))
-                  }
-                </MarkerClusterer>
-                {call ?
-                  <OverlayView
-                    position={viewCenter}
-                    mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
-                  >
-                    <Stepper id={id} />
-                  </OverlayView>
-                  : <>  </>
-                }
-
-              </GoogleMap>
-            </div>
+     { callListView &&
+          <div className={Style.card} >
+            {ListView}
+            
+            {/* {
+              itemsData.map((item,key)=> <Stepper id={key} />)
+             
+              } */}
           </div>
-          }
+      }
+
+          <div ref={node} className={Style.mapContainer} >
+
+
+            <GoogleMap zoom={15} center={center} mapContainerClassName="map-container"
+              options={options}
+              onLoad={onLoad}
+              onClick={() => {
+                console.log(viewBoxClick)
+                console.log(markerClick)
+                viewBoxClick && markerClick ? null : setCall(false)
+                // console.log(mapRef.current.zoom)
+              }}
+            >
+              <MarkerClusterer>
+                {() =>
+                  itemsData.map((house, key) => (
+
+                    <Marker
+                      key={house.listing.lat}
+                      position={{ lat: house.listing.lat, lng: house.listing.lng }}
+                      // clusterer={clusterer}
+                      onClick={() => {
+                        setId(key)
+                        // console.log(house.id); 
+                        setCall(true);
+                        setMarkerClick(true)
+                        const y = ((mapRef.current.getBounds().getNorthEast().lat() - mapRef.current.getBounds().getSouthWest().lat())) / screenHeight * 400
+                        const x = ((mapRef.current.getBounds().getNorthEast().lng() - mapRef.current.getBounds().getSouthWest().lng())) / screenWidth * 370
+                        let _lng = 0
+                        let _lat = 0
+                        house.listing.lng > mapRef.current.getCenter().lng() ?
+                          _lng = house.listing.lng - x
+                          : _lng = house.listing.lng
+
+                        house.listing.lat < mapRef.current.getCenter().lat() ?
+                          _lat = house.listing.lat + y
+                          : _lat = house.listing.lat
+                        setViewCenter({ lat: _lat, lng: _lng })
+
+                      }}
+                      label={house.pricingQuote.priceString}
+                      icon={{
+                        path:
+                          "M-9,-5 l18,0 l0,9 l-18,0 l0,-9",
+                        fillColor: "white",
+                        fillOpacity: 1,
+                        scale: 3,
+                        strokeColor: "red",
+                        strokeWeight: 1.5,
+                      }}
+                    />
+                  ))
+                }
+              </MarkerClusterer>
+              {call ?
+                <OverlayView
+                  position={viewCenter}
+                  mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
+                >
+                  <Stepper id={id} />
+                </OverlayView>
+                : <>  </>
+              }
+
+            </GoogleMap>
+          </div>
         </div>
+      }
+    </div>
   );
 }
-
-const generateHouses = () => {
-  // const spe= '\u20ba'
-  // dollar sign unicode
-  // [
-  //   {
-  //     position: {
-  //       lat: items0.listing.lat,
-  //       lng: items0.listing.lng
-  //     },
-  //     price: items0.pricingQuote.priceString,
-  //     id: 0
-  //   },  ]
-
-
-  // return houses;
-};
+const list=(itemsData)=>{
+  
+  return <div>{itemsData.map((item,key)=> <Stepper id={key}/>)}</div>
+}

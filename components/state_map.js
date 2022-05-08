@@ -13,6 +13,9 @@ const useStore = create(set => ({
   itemsData:[],
   setItemsData:v=>set( state=>({itemsData:v}) ),
 
+  callListView:true,
+  setCallListView:v=>set(state=>({callListView:v}) ),
+
 }))
 
 export {useStore}
