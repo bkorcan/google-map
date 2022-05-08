@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { useStore } from '../components/state_map'
 
 
 export default function GetItems () {
+const setItemsData = useStore(state => state.setItemsData)
+const setCallData = useStore(state => state.setCallData)
 
-    const [data, setData] = useState([])
     useEffect(
         async () => {
             const res = await fetch('../api/get_items', {
@@ -13,13 +15,13 @@ export default function GetItems () {
                 }
             })
 
-            if (res.status === 200) { setData(await res.json()) }
+            if (res.status === 200) { setItemsData(await res.json()); }
             if (res.status === 500) { console.log('There is an error') }
         }, []
     )
 
     return <>
-        {data &&
+        {/* {data &&
             <div >
                 <ul>
                     {
@@ -32,6 +34,6 @@ export default function GetItems () {
                 </ul>
             </div>
 
-        }
+        } */}
     </>
 }
