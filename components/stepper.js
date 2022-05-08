@@ -12,8 +12,6 @@ import Style from '../styles/stepper.module.css'
 import { Grid } from "@mui/material";
 import StarIcon from '@mui/icons-material/Star';
 import { useCallback, useEffect } from 'react';
-
-import res from "../components/data.json";
 import { useStore } from './state_map'
 
 
@@ -21,7 +19,9 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 function Stepper({ id }) {
+
   const itemsData = useStore(state => state.itemsData)
+  
   // lets code click outside
   useEffect(
     () => {

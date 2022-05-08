@@ -7,7 +7,7 @@ const useStore = create(set => ({
   markerClick:false,
   setMarkerClick:v=>set(state=>({markerClick:v})),
 
-  callData: false,
+  callData: true,
   setCallData:v=>set(state=>({ callData:v })),
 
   itemsData:[],
