@@ -29,8 +29,6 @@ function Map() {
 
 
   // ////////////////////////////////////////////////////////
-  // const ListView = useMemo(() => expensiveCalculation(count), [count]);
-
 const ListView =useMemo(()=>list(itemsData),[itemsData])
   // ////////////////////////////////////////////////////////
   const node = useRef()
@@ -86,11 +84,6 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
      { callListView &&
           <div className={Style.card} >
             {ListView}
-            
-            {/* {
-              itemsData.map((item,key)=> <Stepper id={key} />)
-             
-              } */}
           </div>
       }
 
@@ -117,7 +110,6 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
                       // clusterer={clusterer}
                       onClick={() => {
                         setId(key)
-                        // console.log(house.id); 
                         setCall(true);
                         setMarkerClick(true)
                         const y = ((mapRef.current.getBounds().getNorthEast().lat() - mapRef.current.getBounds().getSouthWest().lat())) / screenHeight * 400
@@ -165,7 +157,9 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
     </div>
   );
 }
+
+
 const list=(itemsData)=>{
   
-  return <div>{itemsData.map((item,key)=> <Stepper id={key}/>)}</div>
+  return <div>{itemsData.map((_,key)=> <Stepper  key={key} id={key}/>)}</div>
 }
