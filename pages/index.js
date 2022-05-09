@@ -29,7 +29,7 @@ function Map() {
 
 
   // ////////////////////////////////////////////////////////
-const ListView =useMemo(()=>list(itemsData),[itemsData])
+  const ListView = useMemo(() => list(itemsData), [itemsData])
   // ////////////////////////////////////////////////////////
   const node = useRef()
   useEffect(
@@ -61,7 +61,7 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
     clickableIcons: false,
   }), []);
   const onLoad = useCallback((map) => (mapRef.current = map), []);
-   
+
   const [viewCenter, setViewCenter] = useState({ lat: 36.2748, lng: 29.403 })
   const [call, setCall] = useState(false)
 
@@ -70,7 +70,6 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
   const viewBoxClick = useStore(state => state.viewBoxClick)
   const markerClick = useStore(state => state.markerClick)
   const setMarkerClick = useStore(state => state.setMarkerClick)
-  const callListView = useStore(state => state.callListView)
 
   return (
 
@@ -80,12 +79,9 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
       {itemsData &&
         <div className={Style.mainContainer}>
 
-
-     { callListView &&
           <div className={Style.card} >
             {ListView}
           </div>
-      }
 
           <div ref={node} className={Style.mapContainer} >
 
@@ -107,7 +103,6 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
                     <Marker
                       key={house.listing.lat}
                       position={{ lat: house.listing.lat, lng: house.listing.lng }}
-                      // clusterer={clusterer}
                       onClick={() => {
                         setId(key)
                         setCall(true);
@@ -140,6 +135,7 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
                   ))
                 }
               </MarkerClusterer>
+
               {call ?
                 <OverlayView
                   position={viewCenter}
@@ -159,7 +155,4 @@ const ListView =useMemo(()=>list(itemsData),[itemsData])
 }
 
 
-const list=(itemsData)=>{
-  
-  return <div>{itemsData.map((_,key)=> <Stepper  key={key} id={key}/>)}</div>
-}
+const list = itemsData => <div>{itemsData.map((_, key) => <Stepper key={key} id={key} />)}</div>

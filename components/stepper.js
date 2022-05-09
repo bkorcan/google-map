@@ -19,7 +19,7 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 function Stepper({ id }) {
-  console.log('hey')
+  // console.log('hey')
   const itemsData = useStore(state => state.itemsData)
   
   // lets code click outside
@@ -40,14 +40,13 @@ function Stepper({ id }) {
     }, []
   )
   // 
-  const viewBoxClick = useStore(state => state.viewBoxClick)
   const setViewBoxClick = useStore(state => state.setViewBoxClick)
 
   const items = itemsData[id];
   
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = ContentNew({ id,itemsData }).length;
+  const maxSteps = items.listing.contextualPictures.length;
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -79,7 +78,7 @@ function Stepper({ id }) {
               boxShadow: '0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important'
             }}
           >
-            <Typography>{ContentNew({ id,itemsData })[activeStep].label}</Typography>
+            <Typography>{items.listing.name.substring(0, 42).toLowerCase()}</Typography>
           </Paper>
           <Paper className={Style.subCardMap}>
             <div style={{ display: 'flex', alignItems: "center", }} >
@@ -147,13 +146,15 @@ export { Stepper };
 
 function HomeDetails({ id ,itemsData}) {
   const ar = []
+
   const items =itemsData[id];
   items.listing.homeDetails.map(x => ar.push(x))
   return <> {ar[0].title}  {ar[1].title} {ar[3].title} </>
 }
 
 function ContentNew({ id,itemsData }) {
-  // console.log('hey')
+  console.log('hey')
+
   const items =itemsData[id];
   const picturesLength = items.listing.contextualPictures.length
   const arrayOfPictures = items.listing.contextualPictures.map(x => x.picture)
