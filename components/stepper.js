@@ -9,7 +9,6 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import Style from '../styles/stepper.module.css'
-import { Grid } from "@mui/material";
 import StarIcon from '@mui/icons-material/Star';
 import { useCallback, useEffect } from 'react';
 import { useStore } from './state_map'
@@ -18,10 +17,7 @@ import { useStore } from './state_map'
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
-function Stepper({ id }) {
-  // console.log('hey')
-  const itemsData = useStore(state => state.itemsData)
-  
+function Stepper({ id, itemsData }) {
   // lets code click outside
   useEffect(
     () => {
@@ -43,7 +39,8 @@ function Stepper({ id }) {
   const setViewBoxClick = useStore(state => state.setViewBoxClick)
 
   const items = itemsData[id];
-  
+  console.log(items.listing.contextualPictures)
+
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = items.listing.contextualPictures.length;
@@ -85,7 +82,7 @@ function Stepper({ id }) {
               <div><StarIcon color='secondary' /></div> <div style={{ fontSize: 16 }}>{items.listing.avgRating !== undefined ? `${items.listing.avgRating}/5` : <div> ?/5 </div>}</div>
             </div>
 
-            <div style={{ fontSize: 16 }}>{HomeDetails({ id,itemsData })} </div>
+            <div style={{ fontSize: 16 }}>{HomeDetails({ id, itemsData })} </div>
             <div style={{ fontWeight: "bold", fontSize: 16 }} >{items.pricingQuote.priceString}</div>
           </Paper>
           <AutoPlaySwipeableViews
@@ -96,9 +93,11 @@ function Stepper({ id }) {
             autoplay={false}
           >
             {
-              ContentNew({ id,itemsData }).map((step, index) => (
+              items.listing.contextualPictures.map((step, index) => (
+
                 <div key={index}>
-                  {Math.abs(activeStep - index) <= 2 ? <div> {step.imgContainer}</div> : null} </div>
+                  {Math.abs(activeStep - index) <= 2 ? <div style={{ overflow: 'hidden' }} >
+                    {<img style={{ width: 369, height: 246 }} src={step.picture} ></img>}</div> : <></>} </div>
               ))
             }
 
@@ -132,9 +131,6 @@ function Stepper({ id }) {
               </Button>
             }
           />
-
-
-
         </div>
       }
     </>
@@ -144,26 +140,10 @@ function Stepper({ id }) {
 
 export { Stepper };
 
-function HomeDetails({ id ,itemsData}) {
+function HomeDetails({ id, itemsData }) {
   const ar = []
 
-  const items =itemsData[id];
+  const items = itemsData[id];
   items.listing.homeDetails.map(x => ar.push(x))
   return <> {ar[0].title}  {ar[1].title} {ar[3].title} </>
-}
-
-function ContentNew({ id,itemsData }) {
-  console.log('hey')
-
-  const items =itemsData[id];
-  const picturesLength = items.listing.contextualPictures.length
-  const arrayOfPictures = items.listing.contextualPictures.map(x => x.picture)
-
-
-  if (picturesLength === 6)
-    return [
-      { label: `${items.listing.name.substring(0, 42).toLowerCase()}.... `, imgContainer: <Grid container className={Style.containerImage}><Grid item className={Style.itemImage}> <img src={arrayOfPictures[0]} alt="alt" width={369} height={246} /></Grid> </Grid> },
-      { label: `${items.listing.name.substring(0, 42).toLowerCase()}... `, imgContainer: <Grid container className={Style.containerImage}><Grid item className={Style.itemImage}> <img src={arrayOfPictures[1]} alt="alt" width={369} height={246} /></Grid> </Grid> },
-      { label: `${items.listing.name.substring(0, 42).toLowerCase()}.... `, imgContainer: <Grid container className={Style.containerImage}><Grid item className={Style.itemImage}> <img src={arrayOfPictures[2]} alt="alt" width={369} height={246} /></Grid> </Grid> }, { label: `${items.listing.name.substring(0, 42).toLowerCase()}... `, imgContainer: <Grid container className={Style.containerImage}><Grid item className={Style.itemImage}> <img src={arrayOfPictures[3]} alt="alt" width={369} height={246} /></Grid> </Grid> }, { label: `${items.listing.name.substring(0, 42).toLowerCase()}.... `, imgContainer: <Grid container className={Style.containerImage}><Grid item className={Style.itemImage}> <img src={arrayOfPictures[4]} alt="alt" width={369} height={246} /></Grid> </Grid> }, { label: `${items.listing.name.substring(0, 42).toLowerCase()}... `, imgContainer: <Grid container className={Style.containerImage}><Grid item className={Style.itemImage}> <img src={arrayOfPictures[5]} alt="alt" width={369} height={246} /></Grid> </Grid> },
-    ]
 }

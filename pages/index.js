@@ -8,7 +8,9 @@ import { Stepper } from "../components/stepper";
 import { useStore } from '../components/state_map'
 import Style from '../styles/map.module.css'
 import GetItems from "./get_items";
-
+import ListPagination from "./pagination";
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 
 export default function Home() {
@@ -26,6 +28,15 @@ function Map() {
   const [screenWidth, setScreenWidth] = useState(0)
   const [screenHeight, setScreenHeight] = useState(0)
   const [id, setId] = useState(0)
+  const setItemsData = useStore(state => state.setItemsData)
+  
+  const [page, setPage] = useState(1);
+  const pageChange = (event, value) => {
+    console.log("onchange" + page)
+    setPage(value);
+    // setCall(true)
+    // setItemsData([])
+  };
 
 
   // ////////////////////////////////////////////////////////
@@ -71,16 +82,43 @@ function Map() {
   const markerClick = useStore(state => state.markerClick)
   const setMarkerClick = useStore(state => state.setMarkerClick)
 
+
+//   const setItemsData = useStore(state => state.setItemsData)
+const setCallData = useStore(state => state.setCallData)
+/////////////////////////////////////////////////////////////////////
+    useEffect(
+      async () => {
+        let drop = 20
+          console.log('useeffect')
+          if(page!==5) drop = 10*(page-1)
+          if(page===5) drop = 0
+              const res = await fetch(`../api/get_items?t=10&d=${drop}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+
+            if (res.status === 200) { setItemsData(await res.json());  }
+            if (res.status === 500) { console.log('There is an error') }
+        }, [page]
+    )
+/////////////////////////////////////////////////////////////////////
   return (
 
     <div>
-      {callData && <GetItems />}
+      {/* {callData && <GetItems page={page}/>} */}
 
       {itemsData &&
         <div className={Style.mainContainer}>
 
           <div className={Style.card} >
             {ListView}
+            <Stack spacing={2} style={{ marginTop: 40 }} >
+
+              <Pagination count={10} color="primary" size='large' onChange={pageChange} />
+
+            </Stack>         
           </div>
 
           <div ref={node} className={Style.mapContainer} >
@@ -141,7 +179,7 @@ function Map() {
                   position={viewCenter}
                   mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
                 >
-                  <Stepper id={id} />
+                  <Stepper id={id} itemsData={itemsData}/>
                 </OverlayView>
                 : <>  </>
               }
@@ -155,4 +193,4 @@ function Map() {
 }
 
 
-const list = itemsData => <div>{itemsData.map((_, key) => <Stepper key={key} id={key} />)}</div>
+const list = itemsData => <div>{itemsData.map((_, key) => <Stepper key={key} id={key} itemsData={itemsData} />)}</div>
