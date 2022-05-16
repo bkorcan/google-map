@@ -97,12 +97,12 @@ const dayClicked=(day)=>{
 }
 
     return (
-        <ThemeProvider theme={theme} >
-            <Container component="main">
+        <ThemeProvider theme={theme} style={{padding:0}} >
+            <Container component="main" style={{maxWidth:610,padding:0,overflow:'hidden' }} >
                 <CssBaseline />
                 <Box
                     sx={{
-                        maxWidth: 600,
+                        width: 600,
                         margin: "auto",
                         padding: 10,
                         display: 'flex',
@@ -142,7 +142,7 @@ const dayClicked=(day)=>{
                         <Divider />
 
                         {/* Dates */}
-                        <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 50 }}>
+                        <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 30 }}>
                             Choose Dates
                         </Typography>
 
@@ -170,11 +170,11 @@ const dayClicked=(day)=>{
                         />
                         <Divider />
                         {/* Number Of People */}
-                        <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 50 }}>
+                        <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 30 }}>
                             Number Of  <span style={{ color: 'black' }}> Adults + Kids </span> (age 2 and up)
                         </Typography>
                         <Box sx={{ minWidth: 120 }}>
-                            <FormControl style={{ width: 90, marginTop: 20 }}>
+                            <FormControl style={{ width: 90, marginTop: -20 }}>
                                 <Select
                                     labelId="demo-simple-select-label"
                                     id="demo-simple-select"
@@ -202,10 +202,9 @@ const dayClicked=(day)=>{
                                 </Select>
                             </FormControl>
                         </Box>
-                        <br></br>
-                        <Divider />
+                        <Divider style={{marginTop:10}} />
                         {/* Price */}
-                        <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 50 }}>
+                        <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 30 }}>
                             Price
                         </Typography>
                         <FormControl >
@@ -218,35 +217,23 @@ const dayClicked=(day)=>{
                                 <FormControlLabel value="TL" control={<Radio />} label="TL" />
                             </RadioGroup>
                         </FormControl>
-                        <br />
-                        <TextField id="standard-basic" label="min" variant="standard" style={{ width: 90, marginRight: 40 }} />
-                        <TextField id="standard-basic" label="max" variant="standard" style={{ width: 90 }} />
+                        <TextField id="standard-basic" label="min" variant="standard" style={{ width: 90, marginRight: 40, marginTop:-15, marginLeft:30 }} />
+                        <TextField id="standard-basic" label="max" variant="standard" style={{ width: 90, marginBottom:70, marginTop:-15, }} />
+                        <Divider style={{marginTop:0}} />
                         {/* Price */}
-                        <Button
+                        <Button  
                             type="submit"
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 20 }}
+                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 20 ,backgroundColor:'purple' }}
 
                         >
                             Apply
                         </Button>
-                        {/* <Grid container>
-                            <Grid item xs>
-                                <Link href="#" variant="body2">
-                                    Forgot password?
-                                </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link href="#" variant="body2">
-                                    {"Don't have an account? Sign Up"}
-                                </Link>
-                            </Grid>
-                        </Grid> */}
+                        
                     </Box>
                 </Box>
-                <Copyright sx={{ mt: 8, mb: 4 }} />
             </Container>
         </ThemeProvider>
     );
