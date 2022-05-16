@@ -20,6 +20,15 @@ import InputLabel from '@mui/material/InputLabel';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormLabel from '@mui/material/FormLabel';
+import Style from '../styles/day.module.css'
+import { DayPicker } from 'react-day-picker';
+import 'react-day-picker/dist/style.css';
+import { useStore } from '../components/state_day'
+import format from 'date-fns/format';
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import { useCallback, useRef, useEffect } from 'react';
+
+
 
 
 
@@ -48,16 +57,7 @@ export default function Filter() {
             password: data.get('password'),
         });
     };
-    const [checkedGocek, setCheckedGocek] = React.useState(false);
-    const [checkedKalkan, setCheckedKalkan] = React.useState(false);
-    const [checkedKas, setCheckedKas] = React.useState(false);
 
-
-    const handleChange = (e) => {
-        if (e.target.clientHeight === 46) { setCheckedGocek(!checkedGocek); if (!checkedGocek) { setCheckedKalkan(false); setCheckedKas(false); } }
-        if (e.target.clientHeight === 45) { setCheckedKalkan(!checkedKalkan); if (!checkedKalkan) { setCheckedGocek(false); setCheckedKas(false); } }
-        if (e.target.clientHeight === 47) { setCheckedKas(!checkedKas); if (!checkedKas) { setCheckedGocek(false); setCheckedKalkan(false); } }
-    };
 
 
     // Number  Of People
@@ -67,6 +67,35 @@ export default function Filter() {
         setGuests(event.target.value);
     };
     //   
+    // Date_picker
+    const moveRight = useStore(state => state.moveRight)
+  const setMoveRight = useStore(state => state.setMoveRight)
+  const show = useStore(state => state.show)
+  const setShow = useStore(state => state.setShow)
+  const checkInText = useStore(state => state.checkInText)
+  const setCheckInText = useStore(state => state.setCheckInText)
+  const checkOutText = useStore(state => state.checkOutText)
+  const setCheckOutText = useStore(state => state.setCheckOutText)
+  const focus = useStore(state => state.focus)
+  const setFocus = useStore(state => state.setFocus)
+  const disabled = useStore(state => state.disabled)
+  const setDisabled = useStore(state => state.setDisabled)
+//   
+const dayClicked=(day)=>{
+    if(!focus){
+    setCheckInText(format(day, 'dd MMM yy'));
+    setMoveRight(true);  
+    setFocus(true); 
+    setDisabled( { before:day} )
+}else {
+    setCheckOutText(format(day, 'dd MMM yy'));
+    setShow('none')
+    setFocus(false)
+    setMoveRight(false);
+    setDisabled( [] )
+}
+}
+
     return (
         <ThemeProvider theme={theme} >
             <Container component="main">
@@ -99,44 +128,41 @@ export default function Filter() {
                         *Required
                     </Typography>
                     <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-                        <FormControlLabel
-                            control={<Checkbox value="remember" color="primary" size='large' onChange={handleChange} style={{ height: 50 }} />}
-                            label="Gocek"
-                            checked={checkedGocek}
-                        />
-                        <FormControlLabel
-                            control={<Checkbox value="remember" color="primary" size='large' onChange={handleChange} style={{ height: 49 }} />}
-                            label="Kalkan"
-                            checked={checkedKalkan}
-                        />
-                        <FormControlLabel
-                            control={<Checkbox value="remember" color="primary" size='large' onChange={handleChange} style={{ height: 51 }} />}
-                            label="Kas"
-                            checked={checkedKas}
-                        />
+                        <FormControl >
+                            <RadioGroup row
+                                aria-labelledby="demo-radio-buttons-group-label"
+                                defaultValue="USD"
+                                name="radio-buttons-group"
+                            >
+                                <FormControlLabel value="gocek" control={<Radio />} label="Gocek" />
+                                <FormControlLabel value="kas" control={<Radio />} label="Kas" />
+                                <FormControlLabel value="kalkan" control={<Radio />} label="Kalkan" />
+                            </RadioGroup>
+                        </FormControl>
                         <Divider />
 
+                        {/* Dates */}
                         <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 50 }}>
-                            Date Range
+                            Choose Dates
                         </Typography>
-                        <TextField
-                            margin="normal"
-                            required
-                            name="CheckIn"
-                            label="Check In"
-                            type="text"
-                            id="check_in"
-                            style={{ width: '45%', marginRight: '5%' }}
+
+                        <div className={Style.dayContainer}   >
+                        
+                        <TextField margin="normal" name="CheckIn" value={checkInText} label="Check In" type="text" id="check_in" style={{ width: '45%', marginRight: '5%' }}
+                        onClick={()=>{setShow('block')}}
+                        
+                         />
+                        <TextField  margin="normal" name="CheckOut"  value={checkOutText} label="Check Out" type="text" id="check_out" style={{ width: '45%' }} 
+                        focused={focus}
                         />
-                        <TextField
-                            margin="normal"
-                            required
-                            name="CheckOut"
-                            label="Check Out"
-                            type="text"
-                            id="check_out"
-                            style={{ width: '45%' }}
-                        />
+                        <div className={Style.day} style={{ left: moveRight ? 100 : 0, display: show }} >
+                            <DayPicker
+                            onDayClick={dayClicked}
+                            disabled={disabled}
+                            />
+                        </div>
+                        
+                        </div>
 
                         <FormControlLabel
                             control={<Checkbox value="remember" color="primary" />}
@@ -145,7 +171,7 @@ export default function Filter() {
                         <Divider />
                         {/* Number Of People */}
                         <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 50 }}>
-                            Number Of  <span style={{ color: 'black' }}> Adults + Kids </span> (age 2 and above)
+                            Number Of  <span style={{ color: 'black' }}> Adults + Kids </span> (age 2 and up)
                         </Typography>
                         <Box sx={{ minWidth: 120 }}>
                             <FormControl style={{ width: 90, marginTop: 20 }}>
@@ -172,7 +198,7 @@ export default function Filter() {
                                     <MenuItem value={13}>13</MenuItem>
                                     <MenuItem value={14}>14</MenuItem>
                                     <MenuItem value={15}>15</MenuItem>
-                                    <MenuItem value={16}>16+</MenuItem>
+                                    <MenuItem value={100}>16+</MenuItem>
                                 </Select>
                             </FormControl>
                         </Box>
@@ -193,8 +219,8 @@ export default function Filter() {
                             </RadioGroup>
                         </FormControl>
                         <br />
-                        <TextField id="standard-basic" label="min" variant="standard"  style={{width:90, marginRight:40}}/>
-                        <TextField id="standard-basic" label="max" variant="standard" style={{width:90}}/>
+                        <TextField id="standard-basic" label="min" variant="standard" style={{ width: 90, marginRight: 40 }} />
+                        <TextField id="standard-basic" label="max" variant="standard" style={{ width: 90 }} />
                         {/* Price */}
                         <Button
                             type="submit"
