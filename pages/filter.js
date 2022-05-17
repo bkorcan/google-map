@@ -82,6 +82,7 @@ export default function Filter() {
   const setDisabled = useStore(state => state.setDisabled)
 //   
 const dayClicked=(day)=>{
+    console.log(day)
     if(!focus){
     setCheckInText(format(day, 'dd MMM yy'));
     setMoveRight(true);  
@@ -92,12 +93,12 @@ const dayClicked=(day)=>{
     setShow('none')
     setFocus(false)
     setMoveRight(false);
-    setDisabled( [] )
+    setDisabled( {before:new Date()} )
 }
 }
 
     return (
-        <ThemeProvider theme={theme} style={{padding:0}} >
+        <ThemeProvider theme={theme}  >
             <Container component="main" style={{maxWidth:610,padding:0,overflow:'hidden' }} >
                 <CssBaseline />
                 <Box

@@ -14,7 +14,7 @@ const useStore = create(set => ({
   checkOutText:'',
   setCheckOutText:(v)=>set( state=>({ checkOutText:v }) ),
 
-  disabled:[],
+  disabled: {before:new Date()} ,
   setDisabled:(v)=>set( state=>({disabled:v}) ),
 
   focus:false,
