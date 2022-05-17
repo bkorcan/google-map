@@ -27,6 +27,8 @@ import { useStore } from '../components/state_day'
 import format from 'date-fns/format';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import { useCallback, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router'
+
 
 
 
@@ -69,37 +71,40 @@ export default function Filter() {
     //   
     // Date_picker
     const moveRight = useStore(state => state.moveRight)
-  const setMoveRight = useStore(state => state.setMoveRight)
-  const show = useStore(state => state.show)
-  const setShow = useStore(state => state.setShow)
-  const checkInText = useStore(state => state.checkInText)
-  const setCheckInText = useStore(state => state.setCheckInText)
-  const checkOutText = useStore(state => state.checkOutText)
-  const setCheckOutText = useStore(state => state.setCheckOutText)
-  const focus = useStore(state => state.focus)
-  const setFocus = useStore(state => state.setFocus)
-  const disabled = useStore(state => state.disabled)
-  const setDisabled = useStore(state => state.setDisabled)
-//   
-const dayClicked=(day)=>{
-    console.log(day)
-    if(!focus){
-    setCheckInText(format(day, 'dd MMM yy'));
-    setMoveRight(true);  
-    setFocus(true); 
-    setDisabled( { before:day} )
-}else {
-    setCheckOutText(format(day, 'dd MMM yy'));
-    setShow('none')
-    setFocus(false)
-    setMoveRight(false);
-    setDisabled( {before:new Date()} )
-}
-}
+    const setMoveRight = useStore(state => state.setMoveRight)
+    const show = useStore(state => state.show)
+    const setShow = useStore(state => state.setShow)
+    const checkInText = useStore(state => state.checkInText)
+    const setCheckInText = useStore(state => state.setCheckInText)
+    const checkOutText = useStore(state => state.checkOutText)
+    const setCheckOutText = useStore(state => state.setCheckOutText)
+    const focus = useStore(state => state.focus)
+    const setFocus = useStore(state => state.setFocus)
+    const disabled = useStore(state => state.disabled)
+    const setDisabled = useStore(state => state.setDisabled)
+    //   
+    const dayClicked = (day) => {
+        console.log(day)
+        if (!focus) {
+            setCheckInText(format(day, 'dd MMM yy'));
+            setMoveRight(true);
+            setFocus(true);
+            setDisabled({ before: day })
+        } else {
+            setCheckOutText(format(day, 'dd MMM yy'));
+            setShow('none')
+            setFocus(false)
+            setMoveRight(false);
+            setDisabled({ before: new Date() })
+        }
+    }
+    // Routing
+    const router = useRouter()
+
 
     return (
         <ThemeProvider theme={theme}  >
-            <Container component="main" style={{maxWidth:610,padding:0,overflow:'hidden' }} >
+            <Container component="main" style={{ maxWidth: 610, padding: 0, overflow: 'hidden' }} >
                 <CssBaseline />
                 <Box
                     sx={{
@@ -148,21 +153,21 @@ const dayClicked=(day)=>{
                         </Typography>
 
                         <div className={Style.dayContainer}   >
-                        
-                        <TextField margin="normal" name="CheckIn" value={checkInText} label="Check In" type="text" id="check_in" style={{ width: '45%', marginRight: '5%' }}
-                        onClick={()=>{setShow('block')}}
-                        
-                         />
-                        <TextField  margin="normal" name="CheckOut"  value={checkOutText} label="Check Out" type="text" id="check_out" style={{ width: '45%' }} 
-                        focused={focus}
-                        />
-                        <div className={Style.day} style={{ left: moveRight ? 100 : 0, display: show }} >
-                            <DayPicker
-                            onDayClick={dayClicked}
-                            disabled={disabled}
+
+                            <TextField margin="normal" name="CheckIn" value={checkInText} label="Check In" type="text" id="check_in" style={{ width: '45%', marginRight: '5%' }}
+                                onClick={() => { setDisabled(disabled); setShow('block'); }}
+
                             />
-                        </div>
-                        
+                            <TextField margin="normal" name="CheckOut" value={checkOutText} label="Check Out" type="text" id="check_out" style={{ width: '45%' }}
+                                focused={focus}
+                            />
+                            <div className={Style.day} style={{ left: moveRight ? 100 : 0, display: show }} >
+                                <DayPicker
+                                    onDayClick={dayClicked}
+                                    disabled={disabled}
+                                />
+                            </div>
+
                         </div>
 
                         <FormControlLabel
@@ -203,10 +208,10 @@ const dayClicked=(day)=>{
                                 </Select>
                             </FormControl>
                         </Box>
-                        <Divider style={{marginTop:10}} />
+                        <Divider style={{ marginTop: 10 }} />
                         {/* Price */}
                         <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 30 }}>
-                            Price 
+                            Price
                         </Typography>
                         <FormControl >
                             <RadioGroup row
@@ -218,21 +223,25 @@ const dayClicked=(day)=>{
                                 <FormControlLabel value="TL" control={<Radio />} label="TL" />
                             </RadioGroup>
                         </FormControl>
-                        <TextField id="standard-basic" label="min" variant="standard" style={{ width: 90, marginRight: 40, marginTop:-15, marginLeft:30 }} />
-                        <TextField id="standard-basic" label="max" variant="standard" style={{ width: 90, marginBottom:70, marginTop:-15, }} />
-                        <Divider style={{marginTop:0}} />
+                        <TextField id="standard-basic" label="min" variant="standard" style={{ width: 90, marginRight: 40, marginTop: -15, marginLeft: 30 }} />
+                        <TextField id="standard-basic" label="max" variant="standard" style={{ width: 90, marginBottom: 70, marginTop: -15, }} />
+                        <Divider style={{ marginTop: 0 }} />
                         {/* Price */}
-                        <Button  
+                        <Button
                             type="submit"
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 20 ,backgroundColor:'purple' }}
-
+                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 20, backgroundColor: 'purple' }}
+                            onClick={
+                                () => {
+                                    router.push('/map')
+                                }
+                            }
                         >
                             Apply
                         </Button>
-                        
+
                     </Box>
                 </Box>
             </Container>
