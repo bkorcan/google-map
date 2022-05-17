@@ -121,7 +121,7 @@ const dayClicked=(day)=>{
                     <Typography component="h1" variant="h5">
                         Holiday Villas
                     </Typography>
-                    <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 40 }}>
+                    <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 41 }}>
                         Select A Region
                     </Typography>
                     <Typography color='error' style={{ width: '100%', textAlign: 'left', marginBottom: -20 }}>
@@ -205,7 +205,7 @@ const dayClicked=(day)=>{
                         <Divider style={{marginTop:10}} />
                         {/* Price */}
                         <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 30 }}>
-                            Price
+                            Price 
                         </Typography>
                         <FormControl >
                             <RadioGroup row
