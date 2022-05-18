@@ -154,7 +154,7 @@ export default function Filter() {
 
                         <div className={Style.dayContainer}   >
 
-                            <TextField margin="normal" name="CheckIn" value={checkInText} label="Check In" type="text" id="check_in" style={{ width: '45%', marginRight: '5%' }}
+                            <TextField margin="normal" name="CheckIn" value={checkInText} autocomplete="off" label="Check In" type="text" id="check_in" style={{ width: '45%', marginRight: '5%' }}
                                 onClick={() => { setDisabled(disabled); setShow('block'); }}
 
                             />
