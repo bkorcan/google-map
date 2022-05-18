@@ -22,7 +22,9 @@ function Stepper({ id, itemsData }) {
   useEffect(
     () => {
       document.addEventListener('mousedown', mounted)
-      document.addEventListener('dblclick', (e) => { console.log('double Clicked') })
+      document.addEventListener('dblclick', (e) => { 
+        // console.log('double Clicked') 
+    })
       return () => document.removeEventListener('mousedown', mounted)
     }, []
   )
@@ -39,7 +41,7 @@ function Stepper({ id, itemsData }) {
   const setViewBoxClick = useStore(state => state.setViewBoxClick)
 
   const items = itemsData[id];
-  console.log(items.listing.contextualPictures)
+  // console.log(items.listing.contextualPictures)
 
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);

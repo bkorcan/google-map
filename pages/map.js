@@ -11,9 +11,14 @@ import {
   import ListPagination from "./pagination";
   import Pagination from '@mui/material/Pagination';
   import Stack from '@mui/material/Stack';
+  import { useRouter } from "next/router"
+
   
   
-  export default function Home() {
+  export default function MapHome() {
+
+    const router =useRouter()
+    const {t, ci, co, g, minp, maxp } = router.query
   
     const { isLoaded } = useLoadScript({
       googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
@@ -32,7 +37,7 @@ import {
     
     const [page, setPage] = useState(1);
     const pageChange = (event, value) => {
-      console.log("onchange" + page)
+      // console.log("onchange" + page)
       setPage(value);
       // setCall(true)
       // setItemsData([])
@@ -55,7 +60,9 @@ import {
       (e) => {
         setScreenWidth(node.current.clientWidth)
         setScreenHeight(node.current.clientHeight)
-        mapRef.current.addListener("zoom_changed", () => { console.log('zoom changed'); setCall(false) })
+        mapRef.current.addListener("zoom_changed", () => { 
+          // console.log('zoom changed');
+         setCall(false) })
   
         // if( node.current.contains(e.target) ) console.log('hey')
         return;
@@ -89,7 +96,7 @@ import {
       useEffect(
         async () => {
           let drop = 20
-            console.log('useeffect')
+            // console.log('useeffect')
             if(page!==5) drop = 10*(page-1)
             if(page===5) drop = 0
                 const res = await fetch(`../api/get_items?t=10&d=${drop}`, {
@@ -128,8 +135,8 @@ import {
                 options={options}
                 onLoad={onLoad}
                 onClick={() => {
-                  console.log(viewBoxClick)
-                  console.log(markerClick)
+                  // console.log(viewBoxClick)
+                  // console.log(markerClick)
                   viewBoxClick && markerClick ? null : setCall(false)
                   // console.log(mapRef.current.zoom)
                 }}

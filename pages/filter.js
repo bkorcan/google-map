@@ -16,52 +16,19 @@ import Divider from '@mui/material/Divider';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
-import FormLabel from '@mui/material/FormLabel';
 import Style from '../styles/day.module.css'
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import { useStore } from '../components/state_day'
 import format from 'date-fns/format';
-import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import { useCallback, useRef, useEffect } from 'react';
 import { useRouter } from 'next/router'
 
-
-
-
-
-
-
-function Copyright(props) {
-    return (
-        <Typography variant="body2" color="text.secondary" align="center" {...props}>
-            {'Copyright © '}
-            <Link color="inherit" href="https://mui.com/">
-                Your Website
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
 
 const theme = createTheme();
 
 export default function Filter() {
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const data = new FormData(event.currentTarget);
-        console.log({
-            email: data.get('email'),
-            password: data.get('password'),
-        });
-    };
-
-
-
     // Number  Of People
     const [guests, setGuests] = React.useState(2);
 
@@ -84,7 +51,7 @@ export default function Filter() {
     const setDisabled = useStore(state => state.setDisabled)
     //   
     const dayClicked = (day) => {
-        console.log(day)
+        // console.log(day)
         if (!focus) {
             setCheckInText(format(day, 'dd MMM yy'));
             setMoveRight(true);
@@ -100,6 +67,15 @@ export default function Filter() {
     }
     // Routing
     const router = useRouter()
+    const [town, setTown] = React.useState('')
+    const [currency, setCurrency]  = React.useState('USD')
+    const [minPrice, setMinPrice] = React.useState(0)
+    const [maxPrice, setMaxPrice] = React.useState(0)
+    const [showSubmit, setShowSubmit] = React.useState(false)
+
+    const handleSubmit =()=>{
+        // router.push('/map')
+    }
 
 
     return (
@@ -130,15 +106,18 @@ export default function Filter() {
                     <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 40 }}>
                         Select A Region
                     </Typography>
-                    <Typography color='error' style={{ width: '100%', textAlign: 'left', marginBottom: -20 }}>
+                    <Typography color='error' style={{ width: '100%', textAlign: 'left', marginBottom: 30 }}>
                         *Required
                     </Typography>
-                    <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+                    <Box component="form"  noValidate sx={{ mt: 1 }}>
                         <FormControl >
                             <RadioGroup row
                                 aria-labelledby="demo-radio-buttons-group-label"
                                 defaultValue="USD"
                                 name="radio-buttons-group"
+                                onChange={(e)=>{  
+                                    setTown(e.target.value); setShowSubmit(true)
+                                 }}
                             >
                                 <FormControlLabel value="gocek" control={<Radio />} label="Gocek" />
                                 <FormControlLabel value="kas" control={<Radio />} label="Kas" />
@@ -154,7 +133,7 @@ export default function Filter() {
 
                         <div className={Style.dayContainer}   >
 
-                            <TextField margin="normal" name="CheckIn" value={checkInText} autocomplete="off" label="Check In" type="text" id="check_in" style={{ width: '45%', marginRight: '5%' }}
+                            <TextField margin="normal" name="CheckIn" value={checkInText} autoComplete="off" label="Check In" type="text" id="check_in" style={{ width: '45%', marginRight: '5%' }}
                                 onClick={() => { setDisabled(disabled); setShow('block'); }}
 
                             />
@@ -209,35 +188,51 @@ export default function Filter() {
                             </FormControl>
                         </Box>
                         <Divider style={{ marginTop: 10 }} />
+
                         {/* Price */}
                         <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 30 }}>
                             Price
                         </Typography>
+
+                        {/* Price Currency */}
                         <FormControl >
                             <RadioGroup row
                                 aria-labelledby="demo-radio-buttons-group-label"
                                 defaultValue="USD"
                                 name="radio-buttons-group"
+                                onChange={(e)=>setCurrency(e.target.value)}
                             >
                                 <FormControlLabel value="USD" control={<Radio />} label="USD" />
                                 <FormControlLabel value="TL" control={<Radio />} label="TL" />
                             </RadioGroup>
                         </FormControl>
-                        <TextField id="standard-basic" label="min" variant="standard" style={{ width: 90, marginRight: 40, marginTop: -15, marginLeft: 30 }} />
-                        <TextField id="standard-basic" label="max" variant="standard" style={{ width: 90, marginBottom: 70, marginTop: -15, }} />
+
+                        {/* Price value */}
+                        <TextField onChange={(e)=>setMinPrice(e.target.value)}
+                         id="standard-basic1" label="min" type='number' variant="standard" style={{ width: 90, marginRight: 40, marginTop: -15, marginLeft: 30 }} />
+                        <TextField onChange={(e)=>setMaxPrice(e.target.value)}
+                         id="standard-basic2" label="max" type='number' variant="standard" style={{ width: 90, marginBottom: 70, marginTop: -15, }} />
                         <Divider style={{ marginTop: 0 }} />
                         {/* Price */}
-                        <Button
-                            type="submit"
+                        <Button  disabled 
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 20, backgroundColor: 'purple' }}
-                            onClick={
-                                () => {
-                                    router.push('/map')
-                                }
-                            }
+                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 20, backgroundColor: 'purple', display:showSubmit ? 'none' : 'block' }}
+                        >
+                            Apply
+                        </Button>
+
+                        <Button
+                            fullWidth
+                            variant="contained"
+                            sx={{ mt: 3, mb: 2 }}
+                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 20, backgroundColor: 'purple', display:showSubmit ? 'block' : 'none' }}
+                            onClick={()=>{
+                                // const {t, ci, co, g, minp, maxp } = router.query
+                                router.push(`/map?t=${town}&ci=${checkInText.replace(/ /g, '')}&co=${checkOutText.replace(/ /g,'')}&g=${guests}&minp=${minPrice}&maxp=${maxPrice}`)
+                            }}
+                                                            
                         >
                             Apply
                         </Button>
