@@ -106,7 +106,7 @@ export default function Filter() {
                     <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 40 }}>
                         Select A Region
                     </Typography>
-                    <Typography color='error' style={{ width: '100%', textAlign: 'left', marginBottom: 30 }}>
+                    <Typography color='error' style={{ width: '100%', textAlign: 'left', marginBottom: -30 }}>
                         *Required
                     </Typography>
                     <Box component="form"  noValidate sx={{ mt: 1 }}>
