@@ -103,7 +103,7 @@ export default function Filter() {
                     <Typography component="h1" variant="h5">
                         Holiday Villas
                     </Typography>
-                    <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 40 }}>
+                    <Typography color='secondary' style={{ width: '100%', textAlign: 'left', fontSize: 20, marginTop: 41 }}>
                         Select A Region
                     </Typography>
                     <Typography color='error' style={{ width: '100%', textAlign: 'left', marginBottom: -30 }}>
