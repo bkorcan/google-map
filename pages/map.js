@@ -19,7 +19,7 @@ import {
 
     const router =useRouter()
     const {t, ci, co, g, minp, maxp } = router.query
-  
+    console.log(t)
     const { isLoaded } = useLoadScript({
       googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
     });
@@ -83,7 +83,7 @@ import {
     const [viewCenter, setViewCenter] = useState({ lat: 36.2748, lng: 29.403 })
     const [call, setCall] = useState(false)
   
-    const callData = useStore(state => state.callData)
+    // const callData = useStore(state => state.callData)
   
     const viewBoxClick = useStore(state => state.viewBoxClick)
     const markerClick = useStore(state => state.markerClick)
@@ -91,7 +91,7 @@ import {
   
   
   //   const setItemsData = useStore(state => state.setItemsData)
-  const setCallData = useStore(state => state.setCallData)
+  // const setCallData = useStore(state => state.setCallData)
   /////////////////////////////////////////////////////////////////////
       useEffect(
         async () => {

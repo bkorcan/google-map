@@ -218,7 +218,7 @@ export default function Filter() {
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 20, backgroundColor: 'purple', display:showSubmit ? 'none' : 'block' }}
+                            style={{ paddingTop: 5, paddingBottom: 5, fontSize: 25, backgroundColor: 'purple', display:showSubmit ? 'none' : 'block' }}
                         >
                             Apply
                         </Button>
