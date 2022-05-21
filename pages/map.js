@@ -7,13 +7,10 @@ import {
   import { Stepper } from "../components/stepper";
   import { useStore } from '../components/state_map'
   import Style from '../styles/map.module.css'
-  import GetItems from "./get_items";
-  import ListPagination from "./pagination";
   import Pagination from '@mui/material/Pagination';
   import Stack from '@mui/material/Stack';
   import { useRouter } from "next/router"
 
-  
   
   export default function MapHome() {
 
@@ -37,10 +34,8 @@ import {
     
     const [page, setPage] = useState(1);
     const pageChange = (event, value) => {
-      // console.log("onchange" + page)
       setPage(value);
-      // setCall(true)
-      // setItemsData([])
+      
     };
   
   
@@ -82,21 +77,17 @@ import {
   
     const [viewCenter, setViewCenter] = useState({ lat: 36.2748, lng: 29.403 })
     const [call, setCall] = useState(false)
-  
-    // const callData = useStore(state => state.callData)
-  
     const viewBoxClick = useStore(state => state.viewBoxClick)
     const markerClick = useStore(state => state.markerClick)
     const setMarkerClick = useStore(state => state.setMarkerClick)
   
   
-  //   const setItemsData = useStore(state => state.setItemsData)
-  // const setCallData = useStore(state => state.setCallData)
-  /////////////////////////////////////////////////////////////////////
+  //Pagination And Get Data
+  const [countPage, setCountPage ] = useState(1)
+
       useEffect(
         async () => {
-          let drop = 20
-            // console.log('useeffect')
+          let drop = 0
             if(page!==5) drop = 10*(page-1)
             if(page===5) drop = 0
                 const res = await fetch(`../api/get_items?t=10&d=${drop}`, {
@@ -114,7 +105,6 @@ import {
     return (
   
       <div>
-        {/* {callData && <GetItems page={page}/>} */}
   
         {itemsData &&
           <div className={Style.mainContainer}>

@@ -27,7 +27,8 @@ Select("data", Get(Ref(Collection("kas"), Var('x'))))
 
 #Take n number List Item
 Take(1,Map(Select("data",Paginate(Match('all_ref_ids_gocek'))),Lambda('x',  Select("data", Get(Ref(Collection("gocek"), Var('x')))) )))
-#Get ref id amount between 700 800
+
+#Get ref id by amount between 700 800
 Intersection(
   Filter(
     Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
