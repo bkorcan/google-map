@@ -41,6 +41,17 @@ Intersection(
 )
 
 
+# Update
+
+# Get Item data
+Get( Ref( Collection('kas'), '330122336051136075' )  )
+Update( Ref( Collection('kas'), '330122336051136075' ), {data: { date:[12,23] } }  )
+
+Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) )
+#Select date 
+Select('date',Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) ))
+
+
 
 #Fauna Login
 fauna cloud-login
