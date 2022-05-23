@@ -5,7 +5,7 @@ export default function Testpagination() {
     useEffect(
         async () => {
 
-            const res = await fetch(`../api/get_items?t=900&d=970`, {
+            const res = await fetch(`../api/get_items?t=900&d=970&p=7`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
