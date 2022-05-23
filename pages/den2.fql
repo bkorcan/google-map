@@ -1,0 +1,109 @@
+Intersection(
+  Filter(
+    Select("data", Paginate(Match("amount_all_kas"), { size: 2000 })),
+    Lambda("x", GT(Var("x"), 700))
+  ),
+  Filter(
+    Select("data", Paginate(Match("amount_all_kas"), { size: 2000 })),
+    Lambda("x", LT(Var("x"), 800))
+  )
+
+Intersection(
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", GTE(Select(1,Var("x")), 700))
+  ),
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", LTE(Select(1,Var("x")), 800))
+  )
+)
+  
+
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", GT(Select(1,Var("x")), 700))
+  )
+
+
+
+  Filter(
+    Select("data", Paginate(Match("test"), { size: 2000 })),
+    Lambda("x", GTE(Select(1,Var("x")), 4) )
+  )
+
+  Intersection(
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", GTE(Select(1,Var("x")), 400))
+  ),
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", LTE(Select(1,Var("x")), 800))
+  )
+)
+#Get All Ref Ids Greater than 6 people
+
+  Map(
+Filter(
+    Select("data", Paginate(Match("test"), { size: 2000 })),
+    Lambda("x", GTE(Select(1,Var("x")), 6) )
+  ),Lambda('x', Select(0, Var('x')))
+)
+#Get All Ref Ids between price 400 to 800
+Map( Intersection(
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", GTE(Select(1,Var("x")), 400))
+  ),
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", LTE(Select(1,Var("x")), 800))
+  )
+), Lambda('y', Select(0, Var('y')))
+)
+
+#Intersction  Ref Ids people Greater than 6 and Price Between 400 800
+Intersection(
+  Map( Intersection(
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", GTE(Select(1,Var("x")), 400))
+  ),
+  Filter(
+    Select("data", Paginate(Match("all_amount_id_kas"), { size: 2000 })),
+    Lambda("x", LTE(Select(1,Var("x")), 800))
+  )
+), Lambda('y', Select(0, Var('y')))
+),
+Map(
+Filter(
+    Select("data", Paginate(Match("test"), { size: 2000 })),
+    Lambda("x", GTE(Select(1,Var("x")), 6) )
+  ),Lambda('x', Select(0, Var('x')))
+)
+)
+# Update
+
+# Get Item data
+Get( Ref( Collection('kas'), '330122336051136075' )  )
+Update( Ref( Collection('kas'), '330122336051136075' ), {data: { date:[12,23] } }  )
+Update( Ref( Collection('kas'), '330122336051136075' ), {data: { date:[[250,'23May22'],[260,'24May22']] } }  )
+
+Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) )
+#Select date 
+Select('date',Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) ))
+#Append data to date and Update
+Append([350,'26May22'], Select('date',Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) )) )
+
+Update(Ref(Collection("kas"), "330122336051136075"), {
+  data: {
+    date: Append(
+      [[500, "29May22"]],
+      Select(
+        "date",
+        Select("data", Get(Ref(Collection("kas"), "330122336051136075")))
+      )
+    )
+  }
+})
