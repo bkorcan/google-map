@@ -93,6 +93,8 @@ Update( Ref( Collection('kas'), '330122336051136075' ), {data: { date:[[250,'23M
 Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) )
 #Select date 
 Select('date',Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) ))
+
+
 #Append data to date and Update
 Append([350,'26May22'], Select('date',Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) )) )
 // Create And Update Date

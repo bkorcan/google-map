@@ -1,0 +1,36 @@
+#Check Date by Ref Id
+Select('date',Select('data',Get( Ref( Collection('kas'), '330286436829889100' ))))
+
+#Get All Ref Ids and make an array
+Select('data',Paginate(Match('all_ref_ids_kas'),{size:200} ) )
+
+# Create/Update date all of the items of array above
+Update( Ref( Collection('kas'), '330286436829889100' ), {data: { date:[] } }  )
+#
+Map(
+   Select('data',Paginate(Match('all_ref_ids_kas'),{size:200} ) ),
+   Lambda('x', Update( Ref( Collection('kas'), Var('x') ), {data: { date:[['1Jun22',600,0]] } }  ) )
+)
+#Days Between
+#How many Days between two dates
+TimeDiff(
+  Date("2022-05-26"),
+  Date("2022-05-30"),
+  "days"
+)    
+
+Returns 4
+
+#
+TimeAdd(
+  Date("2022-05-26"),1,"days"
+  )   
+
+  returns Date("2022-05-27")
+#
+
+Map(
+  [1,2,3,4,5,6,7],
+  Lambda('x', TimeAdd( Date("2022-05-26"),Var('x'),"days"
+  ))
+  )
