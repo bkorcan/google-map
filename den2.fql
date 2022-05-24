@@ -118,3 +118,22 @@ Select(
         Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
         ),Lambda('x',  If(Not(Equals(['4Jun22'], [Select(1,Var('x'))]  )  ), Var('x'),[] )   )
       )
+#Multiple Empty date field by given Dates
+ Intersection(
+  Map(
+    [["01Jun22"], ["4Jun22"], ["5Jun22"], ["6Jun22"]],
+    Lambda(
+      "y",
+      Map(
+        Select(
+          "date",
+          Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+        ),
+        Lambda(
+          "x",
+          If(Not(Equals(Var("y"), [Select(1, Var("x"))])), Var("x"), [])
+        )
+      )
+    )
+  )
+)    
