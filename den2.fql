@@ -87,7 +87,7 @@ Filter(
 
 # Get Item data
 Get( Ref( Collection('kas'), '330122336051136075' )  )
-Update( Ref( Collection('kas'), '330122336051136075' ), {data: { date:[12,23] } }  )
+Update( Ref( Collection('kas'), '330286436829889100' ), {data: { date:[] } }  )
 Update( Ref( Collection('kas'), '330122336051136075' ), {data: { date:[[250,'23May22'],[260,'24May22']] } }  )
 
 Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) )
@@ -95,14 +95,15 @@ Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) )
 Select('date',Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) ))
 #Append data to date and Update
 Append([350,'26May22'], Select('date',Select ('data',Get( Ref( Collection('kas'), '330122336051136075' ) ) )) )
-
-Update(Ref(Collection("kas"), "330122336051136075"), {
+// Create And Update Date
+Update( Ref( Collection('kas'), '330286436829889100' ), {data: { date:[] } }  )
+Update(Ref(Collection("kas"), "330286436829889100"), {
   data: {
     date: Append(
-      [[500, "29May22"]],
+      [[650, "01Jun22"],[300, "2Jun22"]],
       Select(
         "date",
-        Select("data", Get(Ref(Collection("kas"), "330122336051136075")))
+        Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
       )
     )
   }
