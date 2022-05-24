@@ -101,7 +101,7 @@ Update( Ref( Collection('kas'), '330286436829889100' ), {data: { date:[] } }  )
 Update(Ref(Collection("kas"), "330286436829889100"), {
   data: {
     date: Append(
-      [[650, "01Jun22"],[300, "2Jun22"]],
+      [[650, "1Jun22"],[300, "2Jun22"],[400, "3Jun22"],[350, "4Jun22"]],
       Select(
         "date",
         Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
@@ -112,6 +112,7 @@ Update(Ref(Collection("kas"), "330286436829889100"), {
 
 
 #  Empty date field by given date
+#GET dates to delete
 Map(
 Select(
         "date",
@@ -119,9 +120,10 @@ Select(
         ),Lambda('x',  If(Not(Equals(['4Jun22'], [Select(1,Var('x'))]  )  ), Var('x'),[] )   )
       )
 #Multiple Empty date field by given Dates
+
  Intersection(
   Map(
-    [["01Jun22"], ["4Jun22"], ["5Jun22"], ["6Jun22"]],
+    [["3Jun22"], ["4Jun22"]],
     Lambda(
       "y",
       Map(
@@ -136,4 +138,33 @@ Select(
       )
     )
   )
-)    
+) 
+
+
+#Delete these dates
+
+Select('date',Select('data',Get( Ref( Collection('kas'), '330286436829889100' ))))
+// 
+Update( Ref( Collection('kas'), '330286436829889100' ),
+{ data:{ date:Intersection(
+  Map(
+    [["3Jun22"], ["4Jun22"]],
+    Lambda(
+      "y",
+      Map(
+        Select(
+          "date",
+          Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+        ),
+        Lambda(
+          "x",
+          If(Not(Equals(Var("y"), [Select(1, Var("x"))])), Var("x"), [])
+        )
+      )
+    )
+  )
+)
+
+ } }
+
+)
