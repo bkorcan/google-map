@@ -8,10 +8,10 @@ const useStore = create(set => ({
   show:'none',
   setShow:(v)=> set( state=>({ show:v }) ),
 
-  checkInText:'',
+  checkInText:'Check In',
   setCheckInText:(v)=>set( state=>({ checkInText:v }) ),
 
-  checkOutText:'',
+  checkOutText:'Check Out',
   setCheckOutText:(v)=>set( state=>({ checkOutText:v }) ),
 
   disabled: {before:new Date()} ,
