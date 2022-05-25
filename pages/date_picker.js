@@ -43,8 +43,8 @@ export default function DayHome() {
   const dayClicked = (day) => {
     setMoveRight(!moveRight)
     console.log(moveRight)
-    if (moveRight) { setShow('none'); setCheckOutText(format(day, 'dd MMM yy')); }
-    else { setCheckInText(format(day, 'dd MMM yy')); setDisabled({ before: day }) }
+    if (moveRight) { setShow('none'); setCheckOutText(format(day, 'yyyy-MM-dd')); }
+    else { setCheckInText(format(day, 'yyyy-MM-dd')); setDisabled({ before: day }) }
   }
 
 
@@ -73,7 +73,7 @@ export default function DayHome() {
       <div className={Style.submit} >
         <button 
         style={{width:'100%', height:'100%',marginLeft:15, backgroundColor:'#fff',fontSize:20, border:'1px solid #ccc'}} 
-        
+
         
         >Send</button>
       </div>
