@@ -1,0 +1,98 @@
+#Add with Update
+// Update
+Update( Ref( Collection('kas'), '330286436829889100' ), {data: { date:[] } }  )
+
+// Select datefiel by given Ref Id
+Select(
+  "date",
+  Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+)
+// Append  Dates
+Update(Ref(Collection("kas"), "330286436829889100"), {
+  data: {
+    date: Append( Map(
+      
+      Select(
+        "array",
+        Select(
+          "data",
+          Get(
+            Ref(
+              Collection("arrays"),
+              TimeDiff(Date("2022-06-26"), Date("2022-06-30"), "days")
+            )
+          )
+        )
+      ),
+
+      Lambda("x", [TimeAdd(Date("2022-06-26"), Var("x"), "days"), 600, 0])
+    ),
+    Select(
+        "date",
+        Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+      )
+  )
+  }
+})
+
+// 
+
+# Activate Or DeActivate Dates for Given Ref Id
+
+// Create array by given Dates and Ref Id
+Select(
+  "array",
+  Select(
+    "data",
+    Get(
+      Ref(
+        Collection("arrays"),
+        TimeDiff(Date("2022-05-28"), Date("2022-05-30"), "days")
+      )
+    )
+  )
+)
+
+//   Create array to Differantiate (to Delete)
+Map(
+    Select(
+    "array",
+    Select(
+      "data",
+      Get(
+        Ref(
+          Collection("arrays"),
+          TimeDiff(Date("2022-05-28"), Date("2022-05-30"), "days")
+        )
+      )
+    )
+  ),
+        Lambda("x", [TimeAdd(Date("2022-05-28"), Var("x"), "days"), 600, 0])
+)
+// 
+#  Delete Dates between two dates  and update date field
+Update(Ref(Collection("kas"), "330286436829889100"), {
+  data: {
+    date: Difference(
+      Select(
+        "date",
+        Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+      ),
+      Map(
+        Select(
+          "array",
+          Select(
+            "data",
+            Get(
+              Ref(
+                Collection("arrays"),
+                TimeDiff(Date("2022-05-28"), Date("2022-05-30"), "days")
+              )
+            )
+          )
+        ),
+        Lambda("x", [TimeAdd(Date("2022-05-28"), Var("x"), "days"), 600, 0])
+      )
+    )
+  }
+})

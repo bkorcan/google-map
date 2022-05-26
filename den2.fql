@@ -121,7 +121,7 @@ Select(
         Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
         ),Lambda('x',  If(Not(Equals(['4Jun22'], [Select(1,Var('x'))]  )  ), Var('x'),[] )   )
       )
-#Multiple Empty date field by given Dates
+#Multiple delete date field by given Dates
 
  Intersection(
   Map(
