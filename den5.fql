@@ -1,6 +1,11 @@
 #Add with Update
-// Update
+// Update Date by Givef Id
 Update( Ref( Collection('kas'), '330286436829889100' ), {data: { date:[] } }  )
+#Create Empty  Date Arraoy for Kas Collection
+Map(
+   Select('data',Paginate(Match('all_ref_ids_kas'),{size:2000} ) ),
+   Lambda('x', Update( Ref( Collection('kas'), Var('x') ), {data: { date:[] } }  ) )
+)
 
 // Select datefiel by given Ref Id
 Select(
@@ -19,13 +24,13 @@ Update(Ref(Collection("kas"), "330286436829889100"), {
           Get(
             Ref(
               Collection("arrays"),
-              TimeDiff(Date("2022-06-26"), Date("2022-06-30"), "days")
+              TimeDiff(TimeSubtract(Date("2022-06-01"),1,'days'), Date("2022-06-12"), "days")
             )
           )
         )
       ),
 
-      Lambda("x", [TimeAdd(Date("2022-06-26"), Var("x"), "days"), 600, 0])
+      Lambda("x", [TimeAdd(TimeSubtract(Date("2022-06-01"),1,'days'), Var("x"), "days"), 100])
     ),
     Select(
         "date",
@@ -86,13 +91,16 @@ Update(Ref(Collection("kas"), "330286436829889100"), {
             Get(
               Ref(
                 Collection("arrays"),
-                TimeDiff(Date("2022-05-28"), Date("2022-05-30"), "days")
+                TimeDiff( TimeSubtract(Date("2022-06-01"),1,'days') , Date("2022-06-02"), "days")
               )
             )
           )
         ),
-        Lambda("x", [TimeAdd(Date("2022-05-28"), Var("x"), "days"), 600, 0])
+        Lambda("x", [TimeAdd(TimeSubtract(Date("2022-06-01"),1,'days'), Var("x"), "days"), 600, 0])
       )
     )
   }
 })
+
+#  Day Before
+TimeSubtract(Date("2022-06-01"),1,'days')

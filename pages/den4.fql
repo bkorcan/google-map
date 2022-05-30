@@ -8,8 +8,8 @@ Select('data',Paginate(Match('all_ref_ids_kas'),{size:200} ) )
 Update( Ref( Collection('kas'), '330286436829889100' ), {data: { date:[] } }  )
 #
 Map(
-   Select('data',Paginate(Match('all_ref_ids_kas'),{size:200} ) ),
-   Lambda('x', Update( Ref( Collection('kas'), Var('x') ), {data: { date:[['1Jun22',600,0]] } }  ) )
+   Select('data',Paginate(Match('all_ref_ids_kas'),{size:2000} ) ),
+   Lambda('x', Update( Ref( Collection('kas'), Var('x') ), {data: { date:[] } }  ) )
 )
 #Days Between
 #How many Days between two dates
