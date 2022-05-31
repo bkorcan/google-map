@@ -57,11 +57,10 @@ export default function Postdates() {
             })
 
             if (res.status === 200) { 
-                // console.log(res.json()[0][0]) 
                 dates = await res.json()
-                console.log(dates[3][0]["@date"])
-                // res.json().map( date=> console.log(date[0].date)  )
-
+                // console.log(dates[3][0]["@date"])
+                console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
+                setDisabled(dates.map(date=> new Date(date[0]["@date"] ) ))
             }
             // if (res.status === 200) { setData(await res.json()) }
             if (res.status === 500) { console.log('There is an error') }
