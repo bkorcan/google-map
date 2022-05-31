@@ -18,7 +18,11 @@ const useStore = create(set => ({
   setDisabled:(v)=>set( state=>({disabled:v}) ),
 
   focus:false,
-  setFocus:v=>set(state=>({focus:v}) )
+  setFocus:v=>set(state=>({focus:v}) ),
+  
+  call:false,
+  setCall:v=>set( state=>({call:v}) )
+
 }))
 
 

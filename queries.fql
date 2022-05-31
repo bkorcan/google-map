@@ -1,13 +1,13 @@
 #Add with Update
 // Update Date by Givef Id
 Update( Ref( Collection('kas'), '330286436829889100' ), {data: { date:[] } }  )
-#Create Empty  Date Arraoy for Kas Collection
+#Create Empty  Date Array for Kas Collection
 Map(
    Select('data',Paginate(Match('all_ref_ids_kas'),{size:2000} ) ),
    Lambda('x', Update( Ref( Collection('kas'), Var('x') ), {data: { date:[] } }  ) )
 )
 
-// Select datefiel by given Ref Id
+// Select Date Field by given Ref Id
 Select(
   "date",
   Select("data", Get(Ref(Collection("kas"), "330286436829889100")))

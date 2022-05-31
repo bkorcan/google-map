@@ -1,11 +1,11 @@
 import { useStore } from "../components/state-post-dates";
-import Style from '../styles/post-dates.odule.css'
+import Style from '../styles/post-dates.module.css'
 import { useRef, useEffect } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 
 
 
-function PostDates() {
+export default function PostDates() {
 
     console.log('rendered')
 
@@ -81,5 +81,3 @@ function PostDates() {
 
     )
 }
-
-export { PostVilla }
