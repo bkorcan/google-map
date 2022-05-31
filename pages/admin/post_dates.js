@@ -35,13 +35,13 @@ export default function Postdates() {
             setCheckInText(format(day, 'yyyy-MM-dd'));
             setMoveRight(true);
             setFocus(true);
-            setDisabled({ before: day })
+            // setDisabled({ before: day })
         } else {
             setCheckOutText(format(day, 'yyyy-MM-dd'));
             setShow('none')
             setFocus(false)
             setMoveRight(false);
-            setDisabled({ before: new Date() })
+            // setDisabled({ before: new Date() , ...disabled })
         }
     }
     // 
