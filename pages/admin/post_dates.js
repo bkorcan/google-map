@@ -4,10 +4,10 @@ import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import { useStore } from '../../components/state_day'
 import format from 'date-fns/format';
-import { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import {Call} from '../../components/post_dates'
+import { useEffect } from 'react';
 
 
 
@@ -44,6 +44,31 @@ export default function Postdates() {
             setDisabled({ before: new Date() })
         }
     }
+    // 
+
+    useEffect(
+        async () => {
+            let dates = []
+            const res = await fetch('/api/admin/get_dates', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+
+            if (res.status === 200) { 
+                // console.log(res.json()[0][0]) 
+                dates = await res.json()
+                console.log(dates[3][0]["@date"])
+                // res.json().map( date=> console.log(date[0].date)  )
+
+            }
+            // if (res.status === 200) { setData(await res.json()) }
+            if (res.status === 500) { console.log('There is an error') }
+        }, [call]
+    )
+
+    // 
 
     return (
         <div className={Style.adminDayContainer} >

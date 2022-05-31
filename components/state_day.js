@@ -21,7 +21,7 @@ const useStore = create(set => ({
   setFocus:v=>set(state=>({focus:v}) ),
   
   call:false,
-  setCall:v=>set( state=>({call:v}) )
+  setCall:v=>set( state=>({call:v}) ),
 
 }))
 

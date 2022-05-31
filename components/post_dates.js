@@ -7,7 +7,7 @@ function Call({checkInText, checkOutText}){
     const setCall = useStore(state => state.setCall)
 
 
-    console.log('hey')
+    // console.log('hey')
     useEffect(
         async () => {
 
