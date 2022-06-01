@@ -6,15 +6,19 @@ import { useStore } from '../../components/state_day'
 import format from 'date-fns/format';
 import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
-import {Call} from '../../components/post_dates'
-import { useEffect } from 'react';
+import { Call } from '../../components/open_dates'
+import { useEffect,useState } from 'react';
 
 
 
 
 export default function Postdates() {
- const call = useStore(state => state.call)
- const setCall = useStore(state => state.setCall)
+   const [bookedDays, setBookedDays] = useState([])
+   const bookedStyle = { border: '2px solid currentColor',innerText:"hey" };
+
+
+    const call = useStore(state => state.call)
+    const setCall = useStore(state => state.setCall)
     // Date_picker
     const moveRight = useStore(state => state.moveRight)
     const setMoveRight = useStore(state => state.setMoveRight)
@@ -35,13 +39,11 @@ export default function Postdates() {
             setCheckInText(format(day, 'yyyy-MM-dd'));
             setMoveRight(true);
             setFocus(true);
-            // setDisabled({ before: day }e
         } else {
             setCheckOutText(format(day, 'yyyy-MM-dd'));
             setShow('none')
             setFocus(false)
             setMoveRight(false);
-            // setDisabled({ before: new Date() , ...disabled })
         }
     }
     // 
@@ -56,11 +58,12 @@ export default function Postdates() {
                 }
             })
 
-            if (res.status === 200) { 
+            if (res.status === 200) {
                 dates = await res.json()
                 // console.log(dates[3][0]["@date"])
-                console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
-                setDisabled(dates.map(date=> new Date(date[0]["@date"] ) ))
+                // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
+                setBookedDays(dates.map(date => new Date(date[0]["@date"])))
+                // setDisabled(dates.map(date => new Date(date[0]["@date"])))
             }
             // if (res.status === 200) { setData(await res.json()) }
             if (res.status === 500) { console.log('There is an error') }
@@ -82,37 +85,38 @@ export default function Postdates() {
                 <TextField margin="normal" name="CheckOut" value={checkOutText} label="Check Out" type="text" id="check_out" style={{ width: '30%' }}
                     focused={focus}
                 />
-                <div className={Style.day} style={{ left: moveRight ? 100 : 0, display: show, top:70 }} >
+                <div className={Style.day} style={{ left: moveRight ? 100 : 0, display: show, top: 70 }} >
                     <DayPicker
                         onDayClick={dayClicked}
-                        disabled={disabled}
+                        modifiers={{ booked: bookedDays }}
+                        modifiersStyles={{ booked: bookedStyle }}
                     />
                 </div>
 
-                { !call &&
-                <Button 
-                     variant="contained"
-                    style={{ fontSize: 20, backgroundColor: 'purple',width:'30%', marginLeft:20,height:53,marginTop:18 }}
-                    onClick={() => {
-                          setCall(true)
-                    }}
+                {!call &&
+                    <Button
+                        variant="contained"
+                        style={{ fontSize: 20, backgroundColor: 'purple', width: '30%', marginLeft: 20, height: 53, marginTop: 18 }}
+                        onClick={() => {
+                            setCall(true)
+                        }}
 
-                >
-                    ADD
-                </Button>
-}
-                { call &&
-                <Button 
-                     variant="contained"
-                    style={{ fontSize: 20, backgroundColor: 'purple',width:'30%', marginLeft:20,height:53,marginTop:18 }}
-                >
-                          <CircularProgress   style={{color:"#fff"}}/>
+                    >
+                        EMPTY
+                    </Button>
+                }
+                {call &&
+                    <Button
+                        variant="contained"
+                        style={{ fontSize: 20, backgroundColor: 'purple', width: '30%', marginLeft: 20, height: 53, marginTop: 18 }}
+                    >
+                        <CircularProgress style={{ color: "#fff" }} />
 
-                </Button>
+                    </Button>
                 }
                 {
                     call &&
-                    <Call  checkInText={checkInText} checkOutText={checkOutText}/>
+                    <Call checkInText={checkInText} checkOutText={checkOutText} />
 
                 }
 

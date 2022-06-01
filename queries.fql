@@ -91,12 +91,12 @@ Update(Ref(Collection("kas"), "330286436829889100"), {
             Get(
               Ref(
                 Collection("arrays"),
-                TimeDiff( TimeSubtract(Date("2022-06-01"),1,'days') , Date("2022-06-02"), "days")
+                TimeDiff( TimeSubtract(Date("2022-06-01"),1,'days') , Date("2022-06-18"), "days")
               )
             )
           )
         ),
-        Lambda("x", [TimeAdd(TimeSubtract(Date("2022-06-01"),1,'days'), Var("x"), "days"), 600, 0])
+        Lambda("x", [TimeAdd(TimeSubtract(Date("2022-06-01"),1,'days'), Var("x"), "days"), 100])
       )
     )
   }
