@@ -7,14 +7,22 @@ import format from 'date-fns/format';
 import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import { Call } from '../../components/open_dates'
-import { useEffect,useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
 
 export default function Postdates() {
-   const [bookedDays, setBookedDays] = useState([])
-   const bookedStyle = { border: '2px solid currentColor',innerText:"hey" };
+    const [bookedDays, setBookedDays] = useState([])
+    const bookedStyle = { border: '2px solid currentColor', innerText: "hey" };
+
+    const getDaysInMonth = (month, year) => {
+        // let month = month.replace(0,'')
+        return new Array(31)
+            .fill('')
+            .map((v, i) =>  new Date(year, month - 1, i + 1))
+            .filter(v => v.getMonth() === month - 1)
+    }
 
 
     const call = useStore(state => state.call)
@@ -47,6 +55,20 @@ export default function Postdates() {
         }
     }
     // 
+    useEffect(
+        async () => {
+            if (bookedDays.length) {
+                
+                var b = new Set(getDaysInMonth(6, 2022).map(x=>format(x,'yyyy-MM-dd')));
+                // var difference = [...bookedDays.map(x=>format(x,'yyyy-MM-dd'))].filter(x => !b.has(x));
+                let difference = getDaysInMonth(6, 2022).map(x=>format(x,'yyyy-MM-dd')).filter(x => !bookedDays.map(x=>format(x,'yyyy-MM-dd')).includes(x));
+                console.log( getDaysInMonth(6, 2022).map(x=>format(x,'yyyy-MM-dd')))
+                console.log( bookedDays.map(x=>format(x,'yyyy-MM-dd')))
+                console.log(difference)
+                // setDisabled(difference)
+            }
+        }, [bookedDays]
+    )
 
     useEffect(
         async () => {
@@ -63,7 +85,7 @@ export default function Postdates() {
                 // console.log(dates[3][0]["@date"])
                 // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
                 setBookedDays(dates.map(date => new Date(date[0]["@date"])))
-                // setDisabled(dates.map(date => new Date(date[0]["@date"])))
+
             }
             // if (res.status === 200) { setData(await res.json()) }
             if (res.status === 500) { console.log('There is an error') }
@@ -85,19 +107,22 @@ export default function Postdates() {
                 <TextField margin="normal" name="CheckOut" value={checkOutText} label="Check Out" type="text" id="check_out" style={{ width: '30%' }}
                     focused={focus}
                 />
-                <div className={Style.day} style={{ left: moveRight ? 100 : 0, display: show, top: 70 }} >
-                    <DayPicker
-                        onDayClick={dayClicked}
-                        modifiers={{ booked: bookedDays }}
-                        modifiersStyles={{ booked: bookedStyle }}
-                    />
-                </div>
-
+                {bookedDays &&
+                    <div className={Style.day} style={{ left: moveRight ? 100 : 0, display: show, top: 70 }} >
+                        <DayPicker
+                            onDayClick={dayClicked}
+                            modifiers={{ booked: bookedDays }}
+                            modifiersStyles={{ booked: bookedStyle }}
+                            disabled={disabled}
+                        />
+                    </div>
+                }
                 {!call &&
                     <Button
                         variant="contained"
                         style={{ fontSize: 20, backgroundColor: 'purple', width: '30%', marginLeft: 20, height: 53, marginTop: 18 }}
                         onClick={() => {
+
                             setCall(true)
                         }}
 
