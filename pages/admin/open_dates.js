@@ -17,7 +17,6 @@ export default function Postdates() {
     const bookedStyle = { border: '2px solid currentColor', innerText: "hey" };
 
     const getDaysInMonth = (month, year) => {
-        // let month = month.replace(0,'')
         return new Array(31)
             .fill('')
             .map((v, i) =>  new Date(year, month - 1, i + 1))
@@ -58,14 +57,8 @@ export default function Postdates() {
     useEffect(
         async () => {
             if (bookedDays.length) {
-                
-                var b = new Set(getDaysInMonth(6, 2022).map(x=>format(x,'yyyy-MM-dd')));
-                // var difference = [...bookedDays.map(x=>format(x,'yyyy-MM-dd'))].filter(x => !b.has(x));
-                let difference = getDaysInMonth(6, 2022).map(x=>format(x,'yyyy-MM-dd')).filter(x => !bookedDays.map(x=>format(x,'yyyy-MM-dd')).includes(x));
-                console.log( getDaysInMonth(6, 2022).map(x=>format(x,'yyyy-MM-dd')))
-                console.log( bookedDays.map(x=>format(x,'yyyy-MM-dd')))
-                console.log(difference)
-                // setDisabled(difference)
+                let difference = [...getDaysInMonth(6, 2022),...getDaysInMonth(7, 2022),...getDaysInMonth(8, 2022),...getDaysInMonth(9, 2022),...getDaysInMonth(10, 2022),...getDaysInMonth(11, 2022),...getDaysInMonth(12, 2022) ].map(x=>format(x,'yyyy-MM-dd')).filter(x => !bookedDays.map(x=>format(x,'yyyy-MM-dd')).includes(x));
+                setDisabled(difference.map(x=> new Date(x) ))
             }
         }, [bookedDays]
     )
