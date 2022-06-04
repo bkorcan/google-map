@@ -2,7 +2,7 @@ import {  useEffect } from 'react';
 import {useStore}  from './state_day'
 
 
-function Call({checkInText, checkOutText}){
+function Call({checkInText, checkOutText, price}){
 
     const setCall = useStore(state => state.setCall)
 
@@ -16,7 +16,7 @@ function Call({checkInText, checkOutText}){
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ ci:checkInText,co:checkOutText })
+                body: JSON.stringify({ ci:checkInText,co:checkOutText, pr:price })
             })
             setCall(false)
             console.log(res.status)

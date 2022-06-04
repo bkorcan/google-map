@@ -3,7 +3,7 @@ const q = faunadb.query
 
 export default  async (req, res)=>{
 
-    const{ ci,co } = req.body
+    const{ ci,co, pr } = req.body
 
     const client = new faunadb.Client({ secret:process.env.SECRET })
 
@@ -27,7 +27,7 @@ export default  async (req, res)=>{
                       )
                     ),
               
-                    q.Lambda("x", [q.TimeAdd(q.TimeSubtract(q.Date(ci),1,'days'), q.Var("x"), "days"), 100])
+                    q.Lambda("x", [q.TimeAdd(q.TimeSubtract(q.Date(ci),1,'days'), q.Var("x"), "days"), pr])
                   ),
                   q.Select(
                       "date",

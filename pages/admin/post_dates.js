@@ -24,6 +24,8 @@ export default function Postdates() {
     const setCheckInText = useStore(state => state.setCheckInText)
     const checkOutText = useStore(state => state.checkOutText)
     const setCheckOutText = useStore(state => state.setCheckOutText)
+    const price = useStore(state => state.price)
+    const setPrice = useStore(state => state.setPrice)
     const focus = useStore(state => state.focus)
     const setFocus = useStore(state => state.setFocus)
     const disabled = useStore(state => state.disabled)
@@ -75,13 +77,18 @@ export default function Postdates() {
 
             <div className={Style.dayContainer}   >
 
-                <TextField margin="normal" name="CheckIn" value={checkInText} autoComplete="off" label="Check In" type="text" id="check_in" style={{ width: '30%', marginRight: '5%' }}
+                <TextField margin="normal" name="CheckIn" value={checkInText} autoComplete="off" label="Check In" type="text" id="check_in" style={{ width: '25%', marginRight: '2%' }}
                     onClick={() => { setDisabled(disabled); setShow('block'); }}
 
                 />
-                <TextField margin="normal" name="CheckOut" value={checkOutText} label="Check Out" type="text" id="check_out" style={{ width: '30%' }}
+                <TextField margin="normal" name="CheckOut" value={checkOutText} label="Check Out" type="text" id="check_out" style={{ width: '25%' }}
                     focused={focus}
                 />
+
+                <TextField type='number' autoComplete="off" label="Price" style={{width:'20%', marginTop:15, marginLeft:15 }}
+                onChange={e=>setPrice(e.target.value)}
+                />
+
                 <div className={Style.day} style={{ left: moveRight ? 100 : 0, display: show, top:70 }} >
                     <DayPicker
                         onDayClick={dayClicked}
@@ -92,7 +99,7 @@ export default function Postdates() {
                 { !call &&
                 <Button 
                      variant="contained"
-                    style={{ fontSize: 20, backgroundColor: 'purple',width:'30%', marginLeft:20,height:53,marginTop:18 }}
+                    style={{ fontSize: 20, backgroundColor: 'purple',width:'20%', marginLeft:20,height:53,marginTop:18 }}
                     onClick={() => {
                           setCall(true)
                     }}
@@ -104,7 +111,7 @@ export default function Postdates() {
                 { call &&
                 <Button 
                      variant="contained"
-                    style={{ fontSize: 20, backgroundColor: 'purple',width:'30%', marginLeft:20,height:53,marginTop:18 }}
+                    style={{ fontSize: 20, backgroundColor: 'purple',width:'20%', marginLeft:20,height:53,marginTop:18 }}
                 >
                           <CircularProgress   style={{color:"#fff"}}/>
 
@@ -112,7 +119,7 @@ export default function Postdates() {
                 }
                 {
                     call &&
-                    <Call  checkInText={checkInText} checkOutText={checkOutText}/>
+                    <Call  checkInText={checkInText} checkOutText={checkOutText} price={price} />
 
                 }
 

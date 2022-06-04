@@ -23,6 +23,9 @@ const useStore = create(set => ({
   call:false,
   setCall:v=>set( state=>({call:v}) ),
 
+  price:0,
+  setPrice:v=>set(state=>({ price:v }) ),
+
 }))
 
 
