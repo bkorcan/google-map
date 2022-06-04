@@ -1,12 +1,8 @@
 const faunadb = require('faunadb')
 const q = faunadb.query
 
-
-
-
 export default  async (req, res)=>{
 
-    // const{ id, name, price } = req.body
     const{ ci,co } = req.body
 
     const client = new faunadb.Client({ secret:process.env.SECRET })
