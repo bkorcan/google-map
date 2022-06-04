@@ -14,7 +14,7 @@ import { useEffect, useState } from 'react';
 
 export default function Postdates() {
     const [bookedDays, setBookedDays] = useState([])
-    const bookedStyle = { border: '2px solid currentColor', innerText: "hey" };
+    const bookedStyle = { border: '2px solid currentColor' };
 
     const getDaysInMonth = (month, year) => {
         return new Array(31)

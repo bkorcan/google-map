@@ -7,12 +7,14 @@ import format from 'date-fns/format';
 import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import {Call} from '../../components/post_dates'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
 
 export default function Postdates() {
+  const  [footer, setFooter] =useState('')
+ 
  const call = useStore(state => state.call)
  const setCall = useStore(state => state.setCall)
     // Date_picker
@@ -32,18 +34,15 @@ export default function Postdates() {
     const setDisabled = useStore(state => state.setDisabled)
 
     const dayClicked = (day) => {
-        // console.log(day)
         if (!focus) {
             setCheckInText(format(day, 'yyyy-MM-dd'));
             setMoveRight(true);
             setFocus(true);
-            // setDisabled({ before: day }e
         } else {
             setCheckOutText(format(day, 'yyyy-MM-dd'));
             setShow('none')
             setFocus(false)
             setMoveRight(false);
-            // setDisabled({ before: new Date() , ...disabled })
         }
     }
     // 
@@ -61,7 +60,10 @@ export default function Postdates() {
             if (res.status === 200) { 
                 dates = await res.json()
                 // console.log(dates[3][0]["@date"])
-                console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
+                console.log( dates.map(x=>x[1]) )
+                // setFooter(dates.map(date=> date[1] ))
+                setFooter('Prices : '+dates.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1]+'\n'))
+                // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
                 setDisabled(dates.map(date=> new Date(date[0]["@date"] ) ))
             }
             // if (res.status === 200) { setData(await res.json()) }
@@ -93,6 +95,7 @@ export default function Postdates() {
                     <DayPicker
                         onDayClick={dayClicked}
                         disabled={disabled}
+                        footer={footer}
                     />
                 </div>
 
