@@ -13,7 +13,8 @@ import { useEffect, useState } from 'react';
 
 
 export default function Postdates() {
-  const  [footer, setFooter] =useState('')
+//   const  [footer, setFooter] =useState('')
+   const [amount, setAmount] = useState([])
   const [month, setMonth] = useState(("0" + (new Date().getMonth()+ 1)).slice(-2))
  
  const call = useStore(state => state.call)
@@ -71,7 +72,7 @@ export default function Postdates() {
                     date=> date[0]["@date"].split('-')[1]==month
                     )
                     console.log(str.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1]))
-                setFooter(str.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1]))
+                setAmount((str.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1])))
                 // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
                 setDisabled(dates.map(date=> new Date(date[0]["@date"] ) ))
             }
@@ -104,9 +105,10 @@ export default function Postdates() {
                     <DayPicker
                         onDayClick={dayClicked}
                         disabled={disabled}
-                        footer={footer}
+                        // footer={footer}
                         onMonthChange={monthChange}
                     />
+                    <div style={{maxWidth:300 }}>{amount.map(x=><li style={{display:'inline-block'}}> {x} , </li>)}</div>
                 </div>
 
                 { !call &&
