@@ -14,6 +14,7 @@ import { useEffect, useState } from 'react';
 
 export default function Postdates() {
   const  [footer, setFooter] =useState('')
+  const [month, setMonth] = useState(("0" + (new Date().getMonth()+ 1)).slice(-2))
  
  const call = useStore(state => state.call)
  const setCall = useStore(state => state.setCall)
@@ -45,7 +46,9 @@ export default function Postdates() {
             setMoveRight(false);
         }
     }
-    // 
+
+    const monthChange=(x)=>setMonth(("0" + (x.getMonth()+ 1)).slice(-2))
+
 
     useEffect(
         async () => {
@@ -58,17 +61,23 @@ export default function Postdates() {
             })
 
             if (res.status === 200) { 
+                console.log(month)
                 dates = await res.json()
                 // console.log(dates[3][0]["@date"])
-                console.log( dates.map(x=>x[1]) )
+                // console.log( dates.map(x=>x[1]) )
                 // setFooter(dates.map(date=> date[1] ))
-                setFooter('Prices : '+dates.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1]+'\n'))
+                // setFooter('Prices : '+dates.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1]+'\n'))
+               let str = dates.filter(
+                    date=> date[0]["@date"].split('-')[1]==month
+                    )
+                    console.log(str.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1]))
+                setFooter(str.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1]))
                 // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
                 setDisabled(dates.map(date=> new Date(date[0]["@date"] ) ))
             }
             // if (res.status === 200) { setData(await res.json()) }
             if (res.status === 500) { console.log('There is an error') }
-        }, [call]
+        }, [call,month]
     )
 
     // 
@@ -96,6 +105,7 @@ export default function Postdates() {
                         onDayClick={dayClicked}
                         disabled={disabled}
                         footer={footer}
+                        onMonthChange={monthChange}
                     />
                 </div>
 
