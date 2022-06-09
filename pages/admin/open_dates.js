@@ -77,6 +77,7 @@ export default function Postdates() {
                 dates = await res.json()
                 // console.log(dates[3][0]["@date"])
                 // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
+                // console.log( dates.map(x=>x[1]) )
                 setBookedDays(dates.map(date => new Date(date[0]["@date"])))
 
             }
