@@ -3,7 +3,8 @@ const q = faunadb.query
 
 export default async (req, res) => {
 
-    const{ ci, co } = req.body
+    const{ ci, co, prc } = req.body
+    console.log(prc)
 
     const client = new faunadb.Client({ secret: process.env.SECRET })
 

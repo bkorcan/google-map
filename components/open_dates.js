@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import { useStore } from './state_day'
-
+import { useState } from 'react';
 
 function Call({ checkInText, checkOutText }) {
 
     const setCall = useStore(state => state.setCall)
+   const [prc, setPrc] = useState([])
 
 
     useEffect(
@@ -20,11 +21,10 @@ function Call({ checkInText, checkOutText }) {
             if (getDates.status === 200) {
                 dates = await getDates.json()
 
-                console.log(
-                    dates.filter(
+                 let str =  dates.filter(
                         date => date[0]["@date"] >= checkInText && date[0]["@date"]<= checkOutText
                     )
-                )
+                   setPrc(str.map(x=>x[1]))
             }
 
             const res = await fetch('/api/admin/open_dates', {
@@ -32,12 +32,12 @@ function Call({ checkInText, checkOutText }) {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ ci: checkInText, co: checkOutText })
+                body: JSON.stringify({ ci: checkInText, co: checkOutText, prc:prc })
             })
             setCall(false)
             console.log(res.status)
 
-        }, []
+        }, [prc]
     )
     return <>  </>
 
