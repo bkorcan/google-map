@@ -1,0 +1,41 @@
+Filter(
+    Select(
+      "date",
+      Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+    ),
+    Lambda("x",And( GTE( Select(0, Var("x")), Date("2022-06-10") ), LTE(Select(0, Var("x")), Date("2022-07-03")) ))
+  )
+
+
+
+Difference(
+  Map(
+    Select(
+      "date",
+      Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+    ),
+    Lambda("x", Select(0, Var("x")))
+  ),
+  Map(
+    Select(
+      "array",
+      Select(
+        "data",
+        Get(
+          Ref(
+            Collection("arrays"),
+            TimeDiff(
+              TimeSubtract(Date("2022-06-05"), 1, "days"),
+              Date("2022-06-07"),
+              "days"
+            )
+          )
+        )
+      )
+    ),
+    Lambda(
+      "x",
+      TimeAdd(TimeSubtract(Date("2022-06-05"), 1, "days"), Var("x"), "days")
+    )
+  )
+)

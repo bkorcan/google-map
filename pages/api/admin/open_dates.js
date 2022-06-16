@@ -1,13 +1,15 @@
+import { Var } from 'faunadb'
+
 const faunadb = require('faunadb')
 const q = faunadb.query
 
 export default async (req, res) => {
 
+    // const{ ci, co} = req.body
     const{ ci, co, prc } = req.body
     console.log(prc)
 
     const client = new faunadb.Client({ secret: process.env.SECRET })
-
     try {
         await client.query(
             // 
@@ -31,7 +33,7 @@ export default async (req, res) => {
                                     )
                                 )
                             ),
-                            q.Lambda("x", [q.TimeAdd(q.TimeSubtract(q.Date(ci), 1, 'days'), q.Var("x"), "days"), 100])
+                            q.Lambda("x", [q.TimeAdd(q.TimeSubtract(q.Date(ci), 1, 'days'), q.Var("x"), "days"), Select(0,prc)])
                         )
                     )
                 }

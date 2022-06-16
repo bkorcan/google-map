@@ -104,3 +104,12 @@ Update(Ref(Collection("kas"), "330286436829889100"), {
 
 #  Day Before
 TimeSubtract(Date("2022-06-01"),1,'days')
+
+#
+Filter(
+Select('data',
+Paginate(
+  Match('date_by_refId_date_kas', '330286436829889100')
+  )
+  ),Lambda('x', Equals( Var('x') , Date("2022-07-05") ) )
+  )

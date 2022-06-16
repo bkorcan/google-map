@@ -14,7 +14,15 @@ import { useEffect, useState } from 'react';
 
 export default function Postdates() {
     const [bookedDays, setBookedDays] = useState([])
+    const [prices, setPrices] = useState([])
     const bookedStyle = { border: '2px solid currentColor' };
+    const [month, setMonth] = useState(("0" + (new Date().getMonth() + 1)).slice(-2))
+    const monthChange = (x) => setMonth(("0" + (x.getMonth() + 1)).slice(-2))
+
+    const submitClicked=()=>{
+        setCall(true)
+
+    }
 
     const getDaysInMonth = (month, year) => {
         return new Array(31)
@@ -65,6 +73,7 @@ export default function Postdates() {
 
     useEffect(
         async () => {
+            console.log(month)
             let dates = []
             const res = await fetch('/api/admin/get_dates', {
                 method: 'GET',
@@ -78,12 +87,13 @@ export default function Postdates() {
                 // console.log(dates[3][0]["@date"])
                 // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
                 // console.log( dates.map(x=>x[1]) )
+                setPrices(dates.map(x=>x[1]))
                 setBookedDays(dates.map(date => new Date(date[0]["@date"])))
 
             }
             // if (res.status === 200) { setData(await res.json()) }
             if (res.status === 500) { console.log('There is an error') }
-        }, [call]
+        }, [call, month]
     )
 
     // 
@@ -108,6 +118,7 @@ export default function Postdates() {
                             modifiers={{ booked: bookedDays }}
                             modifiersStyles={{ booked: bookedStyle }}
                             disabled={disabled}
+                            onMonthChange={monthChange}
                         />
                     </div>
                 }
@@ -115,10 +126,7 @@ export default function Postdates() {
                     <Button
                         variant="contained"
                         style={{ fontSize: 20, backgroundColor: 'purple', width: '30%', marginLeft: 20, height: 53, marginTop: 18 }}
-                        onClick={() => {
-
-                            setCall(true)
-                        }}
+                        onClick={submitClicked}
 
                     >
                         EMPTY
@@ -135,7 +143,7 @@ export default function Postdates() {
                 }
                 {
                     call &&
-                    <Call checkInText={checkInText} checkOutText={checkOutText} />
+                    <Call checkInText={checkInText} checkOutText={checkOutText} prices={prices} />
 
                 }
 
