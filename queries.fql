@@ -76,40 +76,26 @@ Map(
 )
 // 
 #  Delete Dates between two dates  and update date field
-Update(Ref(Collection("kas"), "330286436829889100"), {
+Update(
+  Ref(Collection("kas"), "330286436829889100"), {
   data: {
-    date: Difference(
-      Select(
-        "date",
-        Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
-      ),
-      Map(
-        Select(
-          "array",
-          Select(
-            "data",
-            Get(
-              Ref(
-                Collection("arrays"),
-                TimeDiff( TimeSubtract(Date("2022-06-01"),1,'days') , Date("2022-06-18"), "days")
-              )
-            )
-          )
-        ),
-        Lambda("x", [TimeAdd(TimeSubtract(Date("2022-06-01"),1,'days'), Var("x"), "days"), 100])
-      )
-    )
+    date:
+     Difference(
+    Select(
+    "date",
+    Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+  ),
+  Filter(
+    Select(
+      "date",
+      Select("data", Get(Ref(Collection("kas"), "330286436829889100")))
+    ),
+    Lambda("x",And( GTE( Select(0, Var("x")), Date("2022-06-05") ), LTE(Select(0, Var("x")), Date("2022-06-06")) ))
+  )
+)
   }
-})
+ }
+)
 
 #  Day Before
 TimeSubtract(Date("2022-06-01"),1,'days')
-
-#
-Filter(
-Select('data',
-Paginate(
-  Match('date_by_refId_date_kas', '330286436829889100')
-  )
-  ),Lambda('x', Equals( Var('x') , Date("2022-07-05") ) )
-  )

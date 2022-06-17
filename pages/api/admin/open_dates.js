@@ -4,40 +4,33 @@ const faunadb = require('faunadb')
 const q = faunadb.query
 
 export default async (req, res) => {
-
-    // const{ ci, co} = req.body
-    const{ ci, co, prc } = req.body
-    console.log(prc)
+ 
+    const { ci, co } = req.body
 
     const client = new faunadb.Client({ secret: process.env.SECRET })
     try {
         await client.query(
             // 
-            q.Update(q.Ref(q.Collection("kas"), "330286436829889100"), {
+            q.Update(
+                q.Ref(q.Collection("kas"), "330286436829889100"), {
                 data: {
-                    date: q.Difference(
-                        q.Select(
-                            "date",
-                            q.Select("data", q.Get(q.Ref(q.Collection("kas"), "330286436829889100")))
-                        ),
-                        q.Map(
+                    date:
+                        q.Difference(
                             q.Select(
-                                "array",
-                                q.Select(
-                                    "data",
-                                    q.Get(
-                                        q.Ref(
-                                            q.Collection("arrays"),
-                                            q.TimeDiff(q.TimeSubtract(q.Date(ci), 1, 'days'), q.Date(co), "days")
-                                        )
-                                    )
-                                )
+                                "date",
+                                q.Select("data", q.Get(q.Ref(q.Collection("kas"), "330286436829889100")))
                             ),
-                            q.Lambda("x", [q.TimeAdd(q.TimeSubtract(q.Date(ci), 1, 'days'), q.Var("x"), "days"), Select(0,prc)])
+                            q.Filter(
+                                q.Select(
+                                    "date",
+                                    q.Select("data", q.Get(q.Ref(q.Collection("kas"), "330286436829889100")))
+                                ),
+                                q.Lambda("x", q.And(q.GTE(q.Select(0, q.Var("x")), q.Date(ci)), q.LTE(q.Select(0, q.Var("x")), q.Date(co))))
+                            )
                         )
-                    )
                 }
-            })
+            }
+        )
             //   
         )
 

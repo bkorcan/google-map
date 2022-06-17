@@ -14,7 +14,6 @@ import { useEffect, useState } from 'react';
 
 export default function Postdates() {
     const [bookedDays, setBookedDays] = useState([])
-    const [prices, setPrices] = useState([])
     const bookedStyle = { border: '2px solid currentColor' };
     const [month, setMonth] = useState(("0" + (new Date().getMonth() + 1)).slice(-2))
     const monthChange = (x) => setMonth(("0" + (x.getMonth() + 1)).slice(-2))
@@ -87,7 +86,6 @@ export default function Postdates() {
                 // console.log(dates[3][0]["@date"])
                 // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
                 // console.log( dates.map(x=>x[1]) )
-                setPrices(dates.map(x=>x[1]))
                 setBookedDays(dates.map(date => new Date(date[0]["@date"])))
 
             }
@@ -143,7 +141,7 @@ export default function Postdates() {
                 }
                 {
                     call &&
-                    <Call checkInText={checkInText} checkOutText={checkOutText} prices={prices} />
+                    <Call checkInText={checkInText} checkOutText={checkOutText} />
 
                 }
 
