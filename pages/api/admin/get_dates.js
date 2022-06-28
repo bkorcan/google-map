@@ -2,7 +2,8 @@ const faunadb = require('faunadb')
 const q = faunadb.query
 
 export default async (req, res) => {
-    // const { id } = req.query
+    const { v } = req.query
+    // console.log(v)
 
     try {
 
@@ -12,7 +13,7 @@ export default async (req, res) => {
         const data = await client.query(
             q.Select(
                 "date",
-                q.Select("data", q.Get(q.Ref(q.Collection("kas"), "330286436829889100")))
+                q.Select("data", q.Get(q.Ref(q.Collection("kas"), v)))
               )
         )
 

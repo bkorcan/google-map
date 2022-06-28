@@ -2,12 +2,11 @@ import {  useEffect } from 'react';
 import {useStore}  from './state_day'
 
 
-function Call({checkInText, checkOutText, price}){
+function Call({checkInText, checkOutText, price, villa}){
 
     const setCall = useStore(state => state.setCall)
-
-
-    // console.log('hey')
+    // console.log(villa)
+    
     useEffect(
         async () => {
 
@@ -16,7 +15,7 @@ function Call({checkInText, checkOutText, price}){
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ ci:checkInText,co:checkOutText, pr:price })
+                body: JSON.stringify({ ci:checkInText,co:checkOutText, pr:price, v:villa })
             })
             setCall(false)
             console.log(res.status)

@@ -12,9 +12,14 @@
     width: 600px;
     margin-left: calc( 100% / 2 - 200px );
     position: relative;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     /* background-color: #ddd; */
     /* height: 370px; */
+}
+.selectId{
+    width: 100%;
+    background-color: #ccc;
+    /* marfin-left: 300px; */
 }
 .button{
     width: 145px;

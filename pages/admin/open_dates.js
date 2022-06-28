@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 
 
 
-export default function Postdates() {
+export default function OpenDates() {
     const [bookedDays, setBookedDays] = useState([])
     const bookedStyle = { border: '2px solid currentColor' };
     const [month, setMonth] = useState(("0" + (new Date().getMonth() + 1)).slice(-2))

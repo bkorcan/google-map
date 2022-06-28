@@ -3,14 +3,14 @@ const q = faunadb.query
 
 export default  async (req, res)=>{
 
-    const{ ci,co, pr } = req.body
+    const{ ci,co, pr, v } = req.body
 
     const client = new faunadb.Client({ secret:process.env.SECRET })
 
     try {
         await client.query(
 
-            q.Update(q.Ref(q.Collection("kas"), "330286436829889100"), {
+            q.Update(q.Ref(q.Collection("kas"), v), {
                 data: {
                   date: q.Append( q.Map(
                     
@@ -31,7 +31,7 @@ export default  async (req, res)=>{
                   ),
                   q.Select(
                       "date",
-                      q.Select("data", q.Get(q.Ref(q.Collection("kas"), "330286436829889100")))
+                      q.Select("data", q.Get(q.Ref(q.Collection("kas"), v)))
                     )
                 )
                 }
