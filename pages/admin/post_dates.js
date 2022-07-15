@@ -75,15 +75,17 @@ export default function Postdates() {
                 // console.log( dates.map(x=>x[1]) )
                 // setFooter(dates.map(date=> date[1] ))
                 // setFooter('Prices : '+dates.map(date=> date[0]["@date"].split('-')[2]+'-'+date[1]+'\n'))
-                let str = dates.filter(
-                    date => date[0]["@date"].split('-')[1] == month
-                )
-                console.log(str.map(date => date[0]["@date"].split('-')[2] + '-' + date[1]))
-                setAmount((str.map(date => date[0]["@date"].split('-')[2] + '-' + date[1])))
+                // let str = dates.filter(
+                //     date => date[0]["@date"].split('-')[1] == month
+                // )
+                //  console.log(dates[0][0].date["@date"])
+                // console.log(dates[0].date["@date"])
+
+                // console.log(str.map(date => date[0]["@date"].split('-')[2] + '-' + date[1]))
+                // setAmount((str.map(date => date[0]["@date"].split('-')[2] + '-' + date[1])))
                 // console.log(dates.map(date=> new Date(date[0]["@date"] ) ))
-                setDisabled(dates.map(date => new Date(date[0]["@date"])))
+                setDisabled(dates.map((date,key) => new Date(dates[key].date["@date"])))
             }
-            // if (res.status === 200) { setData(await res.json()) }
             if (res.status === 500) { console.log('There is an error') }
         }, [call, month,villa]
     )

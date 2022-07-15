@@ -27,7 +27,7 @@ export default  async (req, res)=>{
                       )
                     ),
               
-                    q.Lambda("x", [q.TimeAdd(q.TimeSubtract(q.Date(ci),1,'days'), q.Var("x"), "days"), pr])
+                    q.Lambda("x", {'date':q.TimeAdd(q.TimeSubtract(q.Date(ci),1,'days'), q.Var("x"), "days"),'price': pr})
                   ),
                   q.Select(
                       "date",
